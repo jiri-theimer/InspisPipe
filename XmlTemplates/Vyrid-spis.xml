@@ -1,0 +1,10 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/vyrid-spis/request/v_1.0.0.0">
+  <Vyrid-spis>
+    <Id-dokumentu externi="false">DEMOX000KTH4</Id-dokumentu>
+    <Id-zpusob-vyrizeni externi="false">Vyvěšeno na ÚD</Id-zpusob-vyrizeni>
+    <Poznamka-k-vyrizeni>Poznamka k vyrizeni</Poznamka-k-vyrizeni>
+    <Datum-vyrizeni>2003-08-26</Datum-vyrizeni>
+    <Id-funkce-vyrizovatele>DEMOSF00A1CR</Id-funkce-vyrizovatele>
+    <Id-funkce-schvalovatele>DEMOSF00A1CR</Id-funkce-schvalovatele>
+  </Vyrid-spis>
+</Xrg>

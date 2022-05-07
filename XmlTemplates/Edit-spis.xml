@@ -1,0 +1,20 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/edit-spis/request/v_1.0.0.0">
+  <Wfl-dokument>
+    <Id-dokumentu externi="false">DEMOX0010IFA</Id-dokumentu>
+    <Vec> Test</Vec>
+  </Wfl-dokument>
+  <Ssl-dokument>
+    <Pristup>bezny</Pristup>
+    <Vec-podrobne>Testíček podrobně</Vec-podrobne>
+    <Poznamka>Poznámka</Poznamka>
+    <Umisteni>pořadač 1</Umisteni>
+    <Id-funkce-resitele externi="false">DEMOSF009Q7Y</Id-funkce-resitele>
+    <Id-funkce-schvalovatele externi="false">DEMOSF009Q7Y</Id-funkce-schvalovatele>
+    <!--<Id-spisoveho-planu>2005</Id-spisoveho-planu>
+    <Id-spisoveho-znaku> ... </Id-spisoveho-znaku>-->
+  </Ssl-dokument>
+  <Ssl-spis>
+    <Datum-vyrizeni-do>2005-06-12</Datum-vyrizeni-do>
+    <Doplnek-cj>aaa</Doplnek-cj>
+  </Ssl-spis>
+</Xrg>

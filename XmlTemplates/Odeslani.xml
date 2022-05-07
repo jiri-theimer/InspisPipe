@@ -1,0 +1,22 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/odeslani/request/v_1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Odeslani>
+    <!-- demo360g9, d364vvm5 - DEMOX000A9WJ  -->
+    <Id-dokumentu>DEMOX000A9WJ</Id-dokumentu>
+    <Podaci-cislo xsi:nil="true" />
+    <Zpusob-doruceni>posta</Zpusob-doruceni>
+    <!--
+    <Druh-zasilky>doporucena zasilka - standard</Druh-zasilky>
+    <Druh-zachazeni>do vl. rukou (cervena)</Druh-zachazeni>
+    -->
+    <Id-dorucenky>
+    </Id-dorucenky>
+    <Id-adresata>DEMOSE00A7VL</Id-adresata>
+    <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
+    <Typ-obsahu-zasilky>stejnopis</Typ-obsahu-zasilky>
+    <Poznamka>Test odeslání ze XRG460.28</Poznamka>
+    <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>    
+    <Kombinace-sluzeb>1,3</Kombinace-sluzeb>
+    <Druh-zasilky-pro-kombinaci>psani</Druh-zasilky-pro-kombinaci>
+    <Rezim>priprava</Rezim>
+  </Odeslani>
+</Xrg>

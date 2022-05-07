@@ -1,0 +1,11 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/edit-spis/request/v_1.0.0.0">
+  <Wfl-dokument>
+    <Id-dokumentu>MIPOX01HAL74</Id-dokumentu>
+  </Wfl-dokument>
+  <Ssl-dokument>
+    <Id-spisoveho-planu>MPO</Id-spisoveho-planu>
+    <Id-spisoveho-znaku>d</Id-spisoveho-znaku>
+  </Ssl-dokument>
+  <Ssl-spis>
+  </Ssl-spis>
+</Xrg>

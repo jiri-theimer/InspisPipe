@@ -1,0 +1,37 @@
+﻿<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/prehled-dokumentu/request/v_1.0.0.0">
+  <Prehled-dokumentu>
+    <!--
+    <Id-osoby-akt externi="false">DEMOSR009Q14</Id-osoby-akt>
+    <Id-funkce-akt externi="false">DEMOSF009R46</Id-funkce-akt>
+    -->
+    <Datum-podani-od>2013-09-01</Datum-podani-od>
+    <Datum-podani-do>2013-09-30</Datum-podani-do>
+    <Priznak-spisu>spis</Priznak-spisu>
+    <!--<Priznak-cj>iniciacni-k-cj</Priznak-cj>-->
+    <!--<Id-agendy>90</Id-agendy>-->
+    <!--<Id-agendy>10|20|90</Id-agendy>-->
+    <!--<Id-odesilatele>identifikace odesílatele</Id-odesilatele> -->
+    <!-- <Stav-dokumentu>vyrizen</Stav-dokumentu> -->
+    <!--<Id-odesilatele externi="false">DEMOSE00A06F</Id-odesilatele>-->
+    <!--<Id-typu-dokumentu>DEMO0401913D|\\</Id-typu-dokumentu>-->
+    <!--<Datum-zmeny-od>2006-01-01T00:00:00</Datum-zmeny-od>
+    <Datum-zmeny-do>2006-02-01T00:00:00</Datum-zmeny-do>-->
+    <!--<Id-spisoveho-planu></Id-spisoveho-planu>-->
+    <!--<Id-spisoveho-znaku></Id-spisoveho-znaku>-->
+    <Id-spisu>CSI0X002SB1X</Id-spisu>
+    <!--
+    <Denik>ČJ</Denik>
+    <Rok>2006</Rok>
+    -->
+    <!-- <Znacka>PD 1580*</Znacka> -->
+    <!-- <Vec>ss*</Vec> -->
+    <!-- <Poradove-cislo-cj>10</Poradove-cislo-cj> -->
+  </Prehled-dokumentu>
+  <Rizeni-prehledu>
+    <Priznak-generovani>generovat</Priznak-generovani>
+    <Radek-od>1</Radek-od>
+    <Radek-do>9999</Radek-do>
+    <Priznak-zachovani>zachovat</Priznak-zachovani>
+    <Rozsah-prehledu>rozsireny</Rozsah-prehledu>
+  </Rizeni-prehledu>
+</Xrg>

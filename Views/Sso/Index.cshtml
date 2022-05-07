@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Přihlášený uživatel v Membershipu</h2>
+
+<div class="row">
+    <div class="col-sm-1 col-md-2">
+        Membership uživatel:
+    </div>
+    <div class="col-sm-3 col-md-4">
+        <strong>
+            @ViewBag.MembershipUser
+        </strong>
+    </div>
+</div>
+
+<div class="row" style="margin-top:10px;">
+    <div class="col-sm-1 col-md-2">
+        Uživatel ve Windows:
+    </div>
+    <div class="col-sm-3 col-md-4">
+        <strong>
+            @ViewBag.WinUser
+        </strong>
+    </div>
+</div>
+
+
+
+
+<hr />
+@Html.ActionLink("Odhlásit se z membershipu", "Index", "Login", new { area = "" }, null)
+
+
+

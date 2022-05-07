@@ -1,0 +1,38 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-pisemnost/request/v_1.0.0.0">
+    <Wfl-dokument>
+        <Id-dokumentu externi="true">cccc</Id-dokumentu>    
+        <Vec>Pokusná vìc</Vec>
+        <Znacka>AAAA1234</Znacka>
+        <Id-typu-dokumentu>00000400000G</Id-typu-dokumentu>
+        <Priznak-fyz-existence>existuje</Priznak-fyz-existence>
+    </Wfl-dokument>
+    <Doruceni>
+        <Stat>CZE</Stat>
+        <Psc>58602</Psc>
+        <Datum-odeslani>2004-08-30</Datum-odeslani>
+        <Znacka-odesilatele>aaa</Znacka-odesilatele>
+        <Datum-ze-dne>2004-08-30</Datum-ze-dne>
+        <Podaci-cislo>10</Podaci-cislo>
+        <Zpusob-doruceni>neurceno</Zpusob-doruceni>
+        <Druh-zasilky>neurceno</Druh-zasilky>
+        <Druh-zachazeni>neurceno</Druh-zachazeni>
+        <Datum-prijmu-podani>2004-08-30T01:00:00</Datum-prijmu-podani>
+        <Id-odesilatele>KVOPSE00A04S</Id-odesilatele>
+    </Doruceni>
+    <Ssl-dokument>
+        <Pristup>neverejny</Pristup>
+        <Vec-podrobne>Vìc podrobnì</Vec-podrobne>
+        <Poznamka>Poznámka</Poznamka>
+        <Pocet-listu>1</Pocet-listu>
+        <Pocet-priloh>2</Pocet-priloh>
+        <Pocet-stran>3</Pocet-stran>
+        <Pocet-kopii>4</Pocet-kopii>
+        <Umisteni>KVOPAWM0A02G</Umisteni>
+        <Id-funkce-resitele  externi="false">KVOPSF00A07Q</Id-funkce-resitele>
+    </Ssl-dokument>
+</Xrg>
+
+<!-- KVOPAIE0A01R\mikr  -->
+<!-- Cizí dokument se zadanym typem a se zavedeni do SSL vrstvy -->
+<!-- Se zadaným cizím identifikátorem -->
+

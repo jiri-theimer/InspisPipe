@@ -1,0 +1,15 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/prehled-pridelenych/request/v_1.0.0.0">
+  <Prehled-pridelenych>
+    <!-- d364vvg1 ixs_su=DEMOSS009Q2C  ixs_fun=DEMOSF009R46 -->
+    <Id-uzlu-od>DEMOSS009Q2C</Id-uzlu-od>
+    <!-- <Id-osoby-od externi="false">DEMOSR009Q14</Id-osoby-od> -->
+    <Id-uzlu-do>DEMOSS009Q2C</Id-uzlu-do>
+    <!-- <Id-funkce-do externi="false">DEMOSF009R46</Id-funkce-do> -->
+  </Prehled-pridelenych>
+  <Rizeni-prehledu>
+    <Priznak-generovani>generovat</Priznak-generovani>
+    <Priznak-zachovani>nezachovavat</Priznak-zachovani>
+    <Radek-od>1</Radek-od>
+    <Radek-do>50</Radek-do>
+  </Rizeni-prehledu>
+</Xrg>

@@ -1,0 +1,3315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" name="Ssl" targetNamespace="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0">
+      <xsd:element name="Prideleni">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PrideleniResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="PrideleniResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Predani">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PredaniResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="PredaniResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-predanych">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-predanychResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-predanychResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-pridelenych">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-pridelenychResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-pridelenychResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Detail-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-odeslani">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-odeslaniResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Detail-odeslaniResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prevzeti-do-agendy">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prevzeti-do-agendyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prevzeti-do-agendyResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prevzeti-z-agendy">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prevzeti-z-agendyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prevzeti-z-agendyResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Odeslani">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="OdeslaniResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="OdeslaniResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-spis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-spisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zaloz-spisResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-pisemnost">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-pisemnostResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zaloz-pisemnostResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vloz-do-spisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vloz-do-spisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vloz-do-spisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyrid-spis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyrid-spisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyrid-spisResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Uzavri-spis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Uzavri-spisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Uzavri-spisResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Navrat-dorucenky">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Navrat-dorucenkyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Navrat-dorucenkyResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pridat-historii">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pridat-historiiResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Pridat-historiiResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pridat-soubor">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pridat-souborResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Pridat-souborResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Nacist-soubor">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Nacist-souborResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Nacist-souborResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-vyrizeni">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-vyrizeniResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zrusit-vyrizeniResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-vlastnosti-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-vlastnosti-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-vlastnosti-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zalozit-vlastnost-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zalozit-vlastnost-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zalozit-vlastnost-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Smazat-vlastnost-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Smazat-vlastnost-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Smazat-vlastnost-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Nastavit-vlastnost-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Nastavit-vlastnost-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Nastavit-vlastnost-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pravni-moc-spisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pravni-moc-spisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Pravni-moc-spisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Storno-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Storno-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Storno-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-pisemnost">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-pisemnostResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Edit-pisemnostResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-spis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-spisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Edit-spisResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyjmi-ze-spisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyjmi-ze-spisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyjmi-ze-spisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zaloz-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyrid-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyrid-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyrid-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-vyrizeni-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-vyrizeni-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zrusit-vyrizeni-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vloz-do-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vloz-do-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vloz-do-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyjmi-z-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyjmi-z-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyjmi-z-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Storno-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Storno-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Storno-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Preeviduj-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Preeviduj-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Preeviduj-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Detail-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-cj">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-cjResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-cjResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyprav-zasilku">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyprav-zasilkuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyprav-zasilkuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-spis-bez-iniciacniho-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zaloz-spis-bez-iniciacniho-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zaloz-spis-bez-iniciacniho-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Sdruzit-zasilky">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Sdruzit-zasilkyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Sdruzit-zasilkyResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Smazat-souvisejici-dokument">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Smazat-souvisejici-dokumentResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Smazat-souvisejici-dokumentResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pridat-souvisejici-dokument">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pridat-souvisejici-dokumentResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Pridat-souvisejici-dokumentResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-uzavreni-spisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-uzavreni-spisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zrusit-uzavreni-spisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Dokument-esu-cj-odes">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Dokument-esu-cj-odesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Dokument-esu-cj-odesResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyridit-dokument">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyridit-dokumentResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyridit-dokumentResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Priorovat-spis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Priorovat-spisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Priorovat-spisResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Smazat-soubor">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Smazat-souborResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Smazat-souborResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-odeslani">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-odeslaniResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-odeslaniResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Kopie-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Kopie-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Kopie-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pravni-moc-dokumentu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pravni-moc-dokumentuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Pravni-moc-dokumentuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-dotcenych-subjektu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Prehled-dotcenych-subjektuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Prehled-dotcenych-subjektuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pripojit-poznamku">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pripojit-poznamkuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Pripojit-poznamkuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Konvertovat-do-pdf">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Konvertovat-do-pdfResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Konvertovat-do-pdfResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Duplikovat-dokument">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Duplikovat-dokumentResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Duplikovat-dokumentResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-baliku">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-balikuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Detail-balikuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-balik">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-balikResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Edit-balikResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vloz-do-baliku">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vloz-do-balikuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vloz-do-balikuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyjmi-z-baliku">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Vyjmi-z-balikuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Vyjmi-z-balikuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-el-zasilky">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Detail-el-zasilkyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Detail-el-zasilkyResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-zasilka">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Edit-zasilkaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Edit-zasilkaResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-prioraci-spisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Zrusit-prioraci-spisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Zrusit-prioraci-spisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Nacist-dorucenku">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Nacist-dorucenkuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Nacist-dorucenkuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Kontrola-metadat">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Kontrola-metadatResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Kontrola-metadatResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Rak-zadost-konverze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Rak-zadost-konverzeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Rak-zadost-konverzeResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Rak-zadost-zmena-formatu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Rak-zadost-zmena-formatuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Rak-zadost-zmena-formatuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Rak-detail-zadosti">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Rak-detail-zadostiResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Rak-detail-zadostiResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-schvalovaci-predpis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-schvalovaci-predpisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Epk-schvalovaci-predpisResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-stav-predpisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-stav-predpisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Epk-stav-predpisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-storno-predpisu">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-storno-predpisuResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Epk-storno-predpisuResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-prehled-zadosti">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Epk-prehled-zadostiResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Epk-prehled-zadostiResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Ws-info">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="requestXml">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Ws-infoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="Ws-infoResult">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:any minOccurs="0" processContents="lax" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="End-session">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="End-sessionResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Wake-up">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Wake-upResponse">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PrideleniInputMessage">
+    <wsdl:part name="parameters" element="tns:Prideleni" />
+  </wsdl:message>
+  <wsdl:message name="PrideleniOutputMessage">
+    <wsdl:part name="parameters" element="tns:PrideleniResponse" />
+  </wsdl:message>
+  <wsdl:message name="PredaniInputMessage">
+    <wsdl:part name="parameters" element="tns:Predani" />
+  </wsdl:message>
+  <wsdl:message name="PredaniOutputMessage">
+    <wsdl:part name="parameters" element="tns:PredaniResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-predanychInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-predanych" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-predanychOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-predanychResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-pridelenychInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-pridelenych" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-pridelenychOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-pridelenychResponse" />
+  </wsdl:message>
+  <wsdl:message name="Detail-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Detail-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Detail-odeslaniInputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-odeslani" />
+  </wsdl:message>
+  <wsdl:message name="Detail-odeslaniOutputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-odeslaniResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prevzeti-do-agendyInputMessage">
+    <wsdl:part name="parameters" element="tns:Prevzeti-do-agendy" />
+  </wsdl:message>
+  <wsdl:message name="Prevzeti-do-agendyOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prevzeti-do-agendyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prevzeti-z-agendyInputMessage">
+    <wsdl:part name="parameters" element="tns:Prevzeti-z-agendy" />
+  </wsdl:message>
+  <wsdl:message name="Prevzeti-z-agendyOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prevzeti-z-agendyResponse" />
+  </wsdl:message>
+  <wsdl:message name="OdeslaniInputMessage">
+    <wsdl:part name="parameters" element="tns:Odeslani" />
+  </wsdl:message>
+  <wsdl:message name="OdeslaniOutputMessage">
+    <wsdl:part name="parameters" element="tns:OdeslaniResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-spisInputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-spis" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-spisOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-spisResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-pisemnostInputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-pisemnost" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-pisemnostOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-pisemnostResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vloz-do-spisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Vloz-do-spisu" />
+  </wsdl:message>
+  <wsdl:message name="Vloz-do-spisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vloz-do-spisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyrid-spisInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyrid-spis" />
+  </wsdl:message>
+  <wsdl:message name="Vyrid-spisOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyrid-spisResponse" />
+  </wsdl:message>
+  <wsdl:message name="Uzavri-spisInputMessage">
+    <wsdl:part name="parameters" element="tns:Uzavri-spis" />
+  </wsdl:message>
+  <wsdl:message name="Uzavri-spisOutputMessage">
+    <wsdl:part name="parameters" element="tns:Uzavri-spisResponse" />
+  </wsdl:message>
+  <wsdl:message name="Navrat-dorucenkyInputMessage">
+    <wsdl:part name="parameters" element="tns:Navrat-dorucenky" />
+  </wsdl:message>
+  <wsdl:message name="Navrat-dorucenkyOutputMessage">
+    <wsdl:part name="parameters" element="tns:Navrat-dorucenkyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pridat-historiiInputMessage">
+    <wsdl:part name="parameters" element="tns:Pridat-historii" />
+  </wsdl:message>
+  <wsdl:message name="Pridat-historiiOutputMessage">
+    <wsdl:part name="parameters" element="tns:Pridat-historiiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pridat-souborInputMessage">
+    <wsdl:part name="parameters" element="tns:Pridat-soubor" />
+  </wsdl:message>
+  <wsdl:message name="Pridat-souborOutputMessage">
+    <wsdl:part name="parameters" element="tns:Pridat-souborResponse" />
+  </wsdl:message>
+  <wsdl:message name="Nacist-souborInputMessage">
+    <wsdl:part name="parameters" element="tns:Nacist-soubor" />
+  </wsdl:message>
+  <wsdl:message name="Nacist-souborOutputMessage">
+    <wsdl:part name="parameters" element="tns:Nacist-souborResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-vyrizeniInputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-vyrizeni" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-vyrizeniOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-vyrizeniResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-vlastnosti-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-vlastnosti-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-vlastnosti-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-vlastnosti-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zalozit-vlastnost-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Zalozit-vlastnost-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Zalozit-vlastnost-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zalozit-vlastnost-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Smazat-vlastnost-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Smazat-vlastnost-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Smazat-vlastnost-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Smazat-vlastnost-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Nastavit-vlastnost-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Nastavit-vlastnost-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Nastavit-vlastnost-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Nastavit-vlastnost-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pravni-moc-spisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Pravni-moc-spisu" />
+  </wsdl:message>
+  <wsdl:message name="Pravni-moc-spisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Pravni-moc-spisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Storno-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Storno-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Storno-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Storno-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Edit-pisemnostInputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-pisemnost" />
+  </wsdl:message>
+  <wsdl:message name="Edit-pisemnostOutputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-pisemnostResponse" />
+  </wsdl:message>
+  <wsdl:message name="Edit-spisInputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-spis" />
+  </wsdl:message>
+  <wsdl:message name="Edit-spisOutputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-spisResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyjmi-ze-spisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyjmi-ze-spisu" />
+  </wsdl:message>
+  <wsdl:message name="Vyjmi-ze-spisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyjmi-ze-spisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-cj" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyrid-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyrid-cj" />
+  </wsdl:message>
+  <wsdl:message name="Vyrid-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyrid-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-vyrizeni-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-vyrizeni-cj" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-vyrizeni-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-vyrizeni-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vloz-do-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Vloz-do-cj" />
+  </wsdl:message>
+  <wsdl:message name="Vloz-do-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vloz-do-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyjmi-z-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyjmi-z-cj" />
+  </wsdl:message>
+  <wsdl:message name="Vyjmi-z-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyjmi-z-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Storno-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Storno-cj" />
+  </wsdl:message>
+  <wsdl:message name="Storno-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Storno-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Preeviduj-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Preeviduj-cj" />
+  </wsdl:message>
+  <wsdl:message name="Preeviduj-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Preeviduj-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Detail-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-cj" />
+  </wsdl:message>
+  <wsdl:message name="Detail-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-cjInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-cj" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-cjOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-cjResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyprav-zasilkuInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyprav-zasilku" />
+  </wsdl:message>
+  <wsdl:message name="Vyprav-zasilkuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyprav-zasilkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-spis-bez-iniciacniho-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-spis-bez-iniciacniho-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Zaloz-spis-bez-iniciacniho-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zaloz-spis-bez-iniciacniho-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sdruzit-zasilkyInputMessage">
+    <wsdl:part name="parameters" element="tns:Sdruzit-zasilky" />
+  </wsdl:message>
+  <wsdl:message name="Sdruzit-zasilkyOutputMessage">
+    <wsdl:part name="parameters" element="tns:Sdruzit-zasilkyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Smazat-souvisejici-dokumentInputMessage">
+    <wsdl:part name="parameters" element="tns:Smazat-souvisejici-dokument" />
+  </wsdl:message>
+  <wsdl:message name="Smazat-souvisejici-dokumentOutputMessage">
+    <wsdl:part name="parameters" element="tns:Smazat-souvisejici-dokumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pridat-souvisejici-dokumentInputMessage">
+    <wsdl:part name="parameters" element="tns:Pridat-souvisejici-dokument" />
+  </wsdl:message>
+  <wsdl:message name="Pridat-souvisejici-dokumentOutputMessage">
+    <wsdl:part name="parameters" element="tns:Pridat-souvisejici-dokumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-uzavreni-spisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-uzavreni-spisu" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-uzavreni-spisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-uzavreni-spisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dokument-esu-cj-odesInputMessage">
+    <wsdl:part name="parameters" element="tns:Dokument-esu-cj-odes" />
+  </wsdl:message>
+  <wsdl:message name="Dokument-esu-cj-odesOutputMessage">
+    <wsdl:part name="parameters" element="tns:Dokument-esu-cj-odesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyridit-dokumentInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyridit-dokument" />
+  </wsdl:message>
+  <wsdl:message name="Vyridit-dokumentOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyridit-dokumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Priorovat-spisInputMessage">
+    <wsdl:part name="parameters" element="tns:Priorovat-spis" />
+  </wsdl:message>
+  <wsdl:message name="Priorovat-spisOutputMessage">
+    <wsdl:part name="parameters" element="tns:Priorovat-spisResponse" />
+  </wsdl:message>
+  <wsdl:message name="Smazat-souborInputMessage">
+    <wsdl:part name="parameters" element="tns:Smazat-soubor" />
+  </wsdl:message>
+  <wsdl:message name="Smazat-souborOutputMessage">
+    <wsdl:part name="parameters" element="tns:Smazat-souborResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-odeslaniInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-odeslani" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-odeslaniOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-odeslaniResponse" />
+  </wsdl:message>
+  <wsdl:message name="Kopie-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Kopie-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Kopie-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Kopie-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pravni-moc-dokumentuInputMessage">
+    <wsdl:part name="parameters" element="tns:Pravni-moc-dokumentu" />
+  </wsdl:message>
+  <wsdl:message name="Pravni-moc-dokumentuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Pravni-moc-dokumentuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-dotcenych-subjektuInputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-dotcenych-subjektu" />
+  </wsdl:message>
+  <wsdl:message name="Prehled-dotcenych-subjektuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Prehled-dotcenych-subjektuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pripojit-poznamkuInputMessage">
+    <wsdl:part name="parameters" element="tns:Pripojit-poznamku" />
+  </wsdl:message>
+  <wsdl:message name="Pripojit-poznamkuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Pripojit-poznamkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Konvertovat-do-pdfInputMessage">
+    <wsdl:part name="parameters" element="tns:Konvertovat-do-pdf" />
+  </wsdl:message>
+  <wsdl:message name="Konvertovat-do-pdfOutputMessage">
+    <wsdl:part name="parameters" element="tns:Konvertovat-do-pdfResponse" />
+  </wsdl:message>
+  <wsdl:message name="Duplikovat-dokumentInputMessage">
+    <wsdl:part name="parameters" element="tns:Duplikovat-dokument" />
+  </wsdl:message>
+  <wsdl:message name="Duplikovat-dokumentOutputMessage">
+    <wsdl:part name="parameters" element="tns:Duplikovat-dokumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="Detail-balikuInputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-baliku" />
+  </wsdl:message>
+  <wsdl:message name="Detail-balikuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-balikuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Edit-balikInputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-balik" />
+  </wsdl:message>
+  <wsdl:message name="Edit-balikOutputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-balikResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vloz-do-balikuInputMessage">
+    <wsdl:part name="parameters" element="tns:Vloz-do-baliku" />
+  </wsdl:message>
+  <wsdl:message name="Vloz-do-balikuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vloz-do-balikuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Vyjmi-z-balikuInputMessage">
+    <wsdl:part name="parameters" element="tns:Vyjmi-z-baliku" />
+  </wsdl:message>
+  <wsdl:message name="Vyjmi-z-balikuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Vyjmi-z-balikuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Detail-el-zasilkyInputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-el-zasilky" />
+  </wsdl:message>
+  <wsdl:message name="Detail-el-zasilkyOutputMessage">
+    <wsdl:part name="parameters" element="tns:Detail-el-zasilkyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Edit-zasilkaInputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-zasilka" />
+  </wsdl:message>
+  <wsdl:message name="Edit-zasilkaOutputMessage">
+    <wsdl:part name="parameters" element="tns:Edit-zasilkaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-prioraci-spisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-prioraci-spisu" />
+  </wsdl:message>
+  <wsdl:message name="Zrusit-prioraci-spisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Zrusit-prioraci-spisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Nacist-dorucenkuInputMessage">
+    <wsdl:part name="parameters" element="tns:Nacist-dorucenku" />
+  </wsdl:message>
+  <wsdl:message name="Nacist-dorucenkuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Nacist-dorucenkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Kontrola-metadatInputMessage">
+    <wsdl:part name="parameters" element="tns:Kontrola-metadat" />
+  </wsdl:message>
+  <wsdl:message name="Kontrola-metadatOutputMessage">
+    <wsdl:part name="parameters" element="tns:Kontrola-metadatResponse" />
+  </wsdl:message>
+  <wsdl:message name="Rak-zadost-konverzeInputMessage">
+    <wsdl:part name="parameters" element="tns:Rak-zadost-konverze" />
+  </wsdl:message>
+  <wsdl:message name="Rak-zadost-konverzeOutputMessage">
+    <wsdl:part name="parameters" element="tns:Rak-zadost-konverzeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Rak-zadost-zmena-formatuInputMessage">
+    <wsdl:part name="parameters" element="tns:Rak-zadost-zmena-formatu" />
+  </wsdl:message>
+  <wsdl:message name="Rak-zadost-zmena-formatuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Rak-zadost-zmena-formatuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Rak-detail-zadostiInputMessage">
+    <wsdl:part name="parameters" element="tns:Rak-detail-zadosti" />
+  </wsdl:message>
+  <wsdl:message name="Rak-detail-zadostiOutputMessage">
+    <wsdl:part name="parameters" element="tns:Rak-detail-zadostiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Epk-schvalovaci-predpisInputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-schvalovaci-predpis" />
+  </wsdl:message>
+  <wsdl:message name="Epk-schvalovaci-predpisOutputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-schvalovaci-predpisResponse" />
+  </wsdl:message>
+  <wsdl:message name="Epk-stav-predpisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-stav-predpisu" />
+  </wsdl:message>
+  <wsdl:message name="Epk-stav-predpisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-stav-predpisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Epk-storno-predpisuInputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-storno-predpisu" />
+  </wsdl:message>
+  <wsdl:message name="Epk-storno-predpisuOutputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-storno-predpisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Epk-prehled-zadostiInputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-prehled-zadosti" />
+  </wsdl:message>
+  <wsdl:message name="Epk-prehled-zadostiOutputMessage">
+    <wsdl:part name="parameters" element="tns:Epk-prehled-zadostiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ws-infoInputMessage">
+    <wsdl:part name="parameters" element="tns:Ws-info" />
+  </wsdl:message>
+  <wsdl:message name="Ws-infoOutputMessage">
+    <wsdl:part name="parameters" element="tns:Ws-infoResponse" />
+  </wsdl:message>
+  <wsdl:message name="End-sessionInputMessage">
+    <wsdl:part name="parameters" element="tns:End-session" />
+  </wsdl:message>
+  <wsdl:message name="End-sessionOutputMessage">
+    <wsdl:part name="parameters" element="tns:End-sessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Wake-upInputMessage">
+    <wsdl:part name="parameters" element="tns:Wake-up" />
+  </wsdl:message>
+  <wsdl:message name="Wake-upOutputMessage">
+    <wsdl:part name="parameters" element="tns:Wake-upResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SslPortType">
+    <wsdl:operation name="Prideleni">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prideleni" message="tns:PrideleniInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prideleni" message="tns:PrideleniOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Predani">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Predani" message="tns:PredaniInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Predani" message="tns:PredaniOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-dokumentu" message="tns:Prehled-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-dokumentu" message="tns:Prehled-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-predanych">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-predanych" message="tns:Prehled-predanychInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-predanych" message="tns:Prehled-predanychOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-pridelenych">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-pridelenych" message="tns:Prehled-pridelenychInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-pridelenych" message="tns:Prehled-pridelenychOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Detail-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-dokumentu" message="tns:Detail-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-dokumentu" message="tns:Detail-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Detail-odeslani">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-odeslani" message="tns:Detail-odeslaniInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-odeslani" message="tns:Detail-odeslaniOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prevzeti-do-agendy">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prevzeti-do-agendy" message="tns:Prevzeti-do-agendyInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prevzeti-do-agendy" message="tns:Prevzeti-do-agendyOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prevzeti-z-agendy">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prevzeti-z-agendy" message="tns:Prevzeti-z-agendyInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prevzeti-z-agendy" message="tns:Prevzeti-z-agendyOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Odeslani">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Odeslani" message="tns:OdeslaniInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Odeslani" message="tns:OdeslaniOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-spis">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-spis" message="tns:Zaloz-spisInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-spis" message="tns:Zaloz-spisOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-pisemnost">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-pisemnost" message="tns:Zaloz-pisemnostInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-pisemnost" message="tns:Zaloz-pisemnostOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vloz-do-spisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-spisu" message="tns:Vloz-do-spisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-spisu" message="tns:Vloz-do-spisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyrid-spis">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyrid-spis" message="tns:Vyrid-spisInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyrid-spis" message="tns:Vyrid-spisOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Uzavri-spis">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Uzavri-spis" message="tns:Uzavri-spisInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Uzavri-spis" message="tns:Uzavri-spisOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Navrat-dorucenky">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Navrat-dorucenky" message="tns:Navrat-dorucenkyInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Navrat-dorucenky" message="tns:Navrat-dorucenkyOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pridat-historii">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-historii" message="tns:Pridat-historiiInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-historii" message="tns:Pridat-historiiOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pridat-soubor">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-soubor" message="tns:Pridat-souborInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-soubor" message="tns:Pridat-souborOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Nacist-soubor">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nacist-soubor" message="tns:Nacist-souborInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nacist-soubor" message="tns:Nacist-souborOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-vyrizeni">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-vyrizeni" message="tns:Zrusit-vyrizeniInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-vyrizeni" message="tns:Zrusit-vyrizeniOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-vlastnosti-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-vlastnosti-dokumentu" message="tns:Prehled-vlastnosti-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-vlastnosti-dokumentu" message="tns:Prehled-vlastnosti-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zalozit-vlastnost-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zalozit-vlastnost-dokumentu" message="tns:Zalozit-vlastnost-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zalozit-vlastnost-dokumentu" message="tns:Zalozit-vlastnost-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Smazat-vlastnost-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-vlastnost-dokumentu" message="tns:Smazat-vlastnost-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-vlastnost-dokumentu" message="tns:Smazat-vlastnost-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Nastavit-vlastnost-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nastavit-vlastnost-dokumentu" message="tns:Nastavit-vlastnost-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nastavit-vlastnost-dokumentu" message="tns:Nastavit-vlastnost-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pravni-moc-spisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pravni-moc-spisu" message="tns:Pravni-moc-spisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pravni-moc-spisu" message="tns:Pravni-moc-spisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Storno-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Storno-dokumentu" message="tns:Storno-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Storno-dokumentu" message="tns:Storno-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Edit-pisemnost">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-pisemnost" message="tns:Edit-pisemnostInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-pisemnost" message="tns:Edit-pisemnostOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Edit-spis">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-spis" message="tns:Edit-spisInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-spis" message="tns:Edit-spisOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyjmi-ze-spisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-ze-spisu" message="tns:Vyjmi-ze-spisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-ze-spisu" message="tns:Vyjmi-ze-spisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-cj" message="tns:Zaloz-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-cj" message="tns:Zaloz-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyrid-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyrid-cj" message="tns:Vyrid-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyrid-cj" message="tns:Vyrid-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-vyrizeni-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-vyrizeni-cj" message="tns:Zrusit-vyrizeni-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-vyrizeni-cj" message="tns:Zrusit-vyrizeni-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vloz-do-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-cj" message="tns:Vloz-do-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-cj" message="tns:Vloz-do-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyjmi-z-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-z-cj" message="tns:Vyjmi-z-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-z-cj" message="tns:Vyjmi-z-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Storno-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Storno-cj" message="tns:Storno-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Storno-cj" message="tns:Storno-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Preeviduj-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Preeviduj-cj" message="tns:Preeviduj-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Preeviduj-cj" message="tns:Preeviduj-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Detail-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-cj" message="tns:Detail-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-cj" message="tns:Detail-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-cj">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-cj" message="tns:Prehled-cjInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-cj" message="tns:Prehled-cjOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyprav-zasilku">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyprav-zasilku" message="tns:Vyprav-zasilkuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyprav-zasilku" message="tns:Vyprav-zasilkuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-spis-bez-iniciacniho-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-spis-bez-iniciacniho-dokumentu" message="tns:Zaloz-spis-bez-iniciacniho-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-spis-bez-iniciacniho-dokumentu" message="tns:Zaloz-spis-bez-iniciacniho-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sdruzit-zasilky">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Sdruzit-zasilky" message="tns:Sdruzit-zasilkyInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Sdruzit-zasilky" message="tns:Sdruzit-zasilkyOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Smazat-souvisejici-dokument">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-souvisejici-dokument" message="tns:Smazat-souvisejici-dokumentInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-souvisejici-dokument" message="tns:Smazat-souvisejici-dokumentOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pridat-souvisejici-dokument">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-souvisejici-dokument" message="tns:Pridat-souvisejici-dokumentInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-souvisejici-dokument" message="tns:Pridat-souvisejici-dokumentOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-uzavreni-spisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-uzavreni-spisu" message="tns:Zrusit-uzavreni-spisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-uzavreni-spisu" message="tns:Zrusit-uzavreni-spisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Dokument-esu-cj-odes">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Dokument-esu-cj-odes" message="tns:Dokument-esu-cj-odesInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Dokument-esu-cj-odes" message="tns:Dokument-esu-cj-odesOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyridit-dokument">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyridit-dokument" message="tns:Vyridit-dokumentInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyridit-dokument" message="tns:Vyridit-dokumentOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Priorovat-spis">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Priorovat-spis" message="tns:Priorovat-spisInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Priorovat-spis" message="tns:Priorovat-spisOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Smazat-soubor">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-soubor" message="tns:Smazat-souborInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-soubor" message="tns:Smazat-souborOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-odeslani">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-odeslani" message="tns:Prehled-odeslaniInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-odeslani" message="tns:Prehled-odeslaniOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Kopie-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Kopie-dokumentu" message="tns:Kopie-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Kopie-dokumentu" message="tns:Kopie-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pravni-moc-dokumentu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pravni-moc-dokumentu" message="tns:Pravni-moc-dokumentuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pravni-moc-dokumentu" message="tns:Pravni-moc-dokumentuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-dotcenych-subjektu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-dotcenych-subjektu" message="tns:Prehled-dotcenych-subjektuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-dotcenych-subjektu" message="tns:Prehled-dotcenych-subjektuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Pripojit-poznamku">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pripojit-poznamku" message="tns:Pripojit-poznamkuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pripojit-poznamku" message="tns:Pripojit-poznamkuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Konvertovat-do-pdf">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Konvertovat-do-pdf" message="tns:Konvertovat-do-pdfInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Konvertovat-do-pdf" message="tns:Konvertovat-do-pdfOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Duplikovat-dokument">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Duplikovat-dokument" message="tns:Duplikovat-dokumentInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Duplikovat-dokument" message="tns:Duplikovat-dokumentOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Detail-baliku">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-baliku" message="tns:Detail-balikuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-baliku" message="tns:Detail-balikuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Edit-balik">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-balik" message="tns:Edit-balikInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-balik" message="tns:Edit-balikOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vloz-do-baliku">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-baliku" message="tns:Vloz-do-balikuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-baliku" message="tns:Vloz-do-balikuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Vyjmi-z-baliku">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-z-baliku" message="tns:Vyjmi-z-balikuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-z-baliku" message="tns:Vyjmi-z-balikuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Detail-el-zasilky">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-el-zasilky" message="tns:Detail-el-zasilkyInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-el-zasilky" message="tns:Detail-el-zasilkyOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Edit-zasilka">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-zasilka" message="tns:Edit-zasilkaInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-zasilka" message="tns:Edit-zasilkaOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-prioraci-spisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-prioraci-spisu" message="tns:Zrusit-prioraci-spisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-prioraci-spisu" message="tns:Zrusit-prioraci-spisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Nacist-dorucenku">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nacist-dorucenku" message="tns:Nacist-dorucenkuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nacist-dorucenku" message="tns:Nacist-dorucenkuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Kontrola-metadat">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Kontrola-metadat" message="tns:Kontrola-metadatInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Kontrola-metadat" message="tns:Kontrola-metadatOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rak-zadost-konverze">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-zadost-konverze" message="tns:Rak-zadost-konverzeInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-zadost-konverze" message="tns:Rak-zadost-konverzeOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rak-zadost-zmena-formatu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-zadost-zmena-formatu" message="tns:Rak-zadost-zmena-formatuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-zadost-zmena-formatu" message="tns:Rak-zadost-zmena-formatuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Rak-detail-zadosti">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-detail-zadosti" message="tns:Rak-detail-zadostiInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-detail-zadosti" message="tns:Rak-detail-zadostiOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Epk-schvalovaci-predpis">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-schvalovaci-predpis" message="tns:Epk-schvalovaci-predpisInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-schvalovaci-predpis" message="tns:Epk-schvalovaci-predpisOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Epk-stav-predpisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-stav-predpisu" message="tns:Epk-stav-predpisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-stav-predpisu" message="tns:Epk-stav-predpisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Epk-storno-predpisu">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-storno-predpisu" message="tns:Epk-storno-predpisuInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-storno-predpisu" message="tns:Epk-storno-predpisuOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Epk-prehled-zadosti">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-prehled-zadosti" message="tns:Epk-prehled-zadostiInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-prehled-zadosti" message="tns:Epk-prehled-zadostiOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Ws-info">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Ws-info" message="tns:Ws-infoInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Ws-info" message="tns:Ws-infoOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="End-session">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/End-session" message="tns:End-sessionInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/End-session" message="tns:End-sessionOutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Wake-up">
+      <wsdl:input wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Wake-up" message="tns:Wake-upInputMessage" />
+      <wsdl:output wsaw:Action="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Wake-up" message="tns:Wake-upOutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SslBinding" type="tns:SslPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Prideleni">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prideleni" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Predani">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Predani" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-predanych">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-predanych" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-pridelenych">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-pridelenych" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Detail-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Detail-odeslani">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-odeslani" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prevzeti-do-agendy">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prevzeti-do-agendy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prevzeti-z-agendy">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prevzeti-z-agendy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Odeslani">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Odeslani" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-spis">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-spis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-pisemnost">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-pisemnost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vloz-do-spisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-spisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyrid-spis">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyrid-spis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Uzavri-spis">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Uzavri-spis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Navrat-dorucenky">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Navrat-dorucenky" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pridat-historii">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-historii" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pridat-soubor">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-soubor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Nacist-soubor">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nacist-soubor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-vyrizeni">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-vyrizeni" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-vlastnosti-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-vlastnosti-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zalozit-vlastnost-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zalozit-vlastnost-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Smazat-vlastnost-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-vlastnost-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Nastavit-vlastnost-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nastavit-vlastnost-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pravni-moc-spisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pravni-moc-spisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Storno-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Storno-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Edit-pisemnost">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-pisemnost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Edit-spis">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-spis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyjmi-ze-spisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-ze-spisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyrid-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyrid-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-vyrizeni-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-vyrizeni-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vloz-do-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyjmi-z-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-z-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Storno-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Storno-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Preeviduj-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Preeviduj-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Detail-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-cj">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-cj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyprav-zasilku">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyprav-zasilku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zaloz-spis-bez-iniciacniho-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zaloz-spis-bez-iniciacniho-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sdruzit-zasilky">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Sdruzit-zasilky" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Smazat-souvisejici-dokument">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-souvisejici-dokument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pridat-souvisejici-dokument">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pridat-souvisejici-dokument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-uzavreni-spisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-uzavreni-spisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Dokument-esu-cj-odes">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Dokument-esu-cj-odes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyridit-dokument">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyridit-dokument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Priorovat-spis">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Priorovat-spis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Smazat-soubor">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Smazat-soubor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-odeslani">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-odeslani" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kopie-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Kopie-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pravni-moc-dokumentu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pravni-moc-dokumentu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prehled-dotcenych-subjektu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Prehled-dotcenych-subjektu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pripojit-poznamku">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Pripojit-poznamku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Konvertovat-do-pdf">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Konvertovat-do-pdf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Duplikovat-dokument">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Duplikovat-dokument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Detail-baliku">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-baliku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Edit-balik">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-balik" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vloz-do-baliku">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vloz-do-baliku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Vyjmi-z-baliku">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Vyjmi-z-baliku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Detail-el-zasilky">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Detail-el-zasilky" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Edit-zasilka">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Edit-zasilka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Zrusit-prioraci-spisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Zrusit-prioraci-spisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Nacist-dorucenku">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Nacist-dorucenku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Kontrola-metadat">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Kontrola-metadat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rak-zadost-konverze">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-zadost-konverze" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rak-zadost-zmena-formatu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-zadost-zmena-formatu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rak-detail-zadosti">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Rak-detail-zadosti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Epk-schvalovaci-predpis">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-schvalovaci-predpis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Epk-stav-predpisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-stav-predpisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Epk-storno-predpisu">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-storno-predpisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Epk-prehled-zadosti">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Epk-prehled-zadosti" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ws-info">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Ws-info" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="End-session">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/End-session" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Wake-up">
+      <soap:operation soapAction="http://www.gordic.cz/svc/xrg-ssl/v_1.0.0.0/Wake-up" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SslService">
+    <wsdl:port name="SslPort" binding="tns:SslBinding">
+      <soap:address location="http://wmx06.csi.local/Gordic/Ginis/Ws/SSL01/Ssl.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,27 @@
+﻿@using System.Collections;
+
+@{
+    ViewBag.Title = "Environment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Environment</h2>
+
+
+<table>
+
+    @foreach (DictionaryEntry c in Environment.GetEnvironmentVariables())
+    {
+        <tr>
+            <td>
+                @c.Key
+            </td>
+            <td>
+                @c.Value
+            </td>
+        </tr>
+    }
+
+
+</table>
+

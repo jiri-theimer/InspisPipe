@@ -1,0 +1,37 @@
+<Xrg xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/prehled-odeslani/request/v_1.0.0.0">
+  <Prehled-odeslani>
+    <!-- <Id-dokumentu externi="false">DEMOP000EXH2</Id-dokumentu> -->
+    <!-- <Datum-odeslani>2009-10-03T00:00:00</Datum-odeslani> -->
+    <!-- <Datum-odeslani-do>2009-10-20T23:59:59</Datum-odeslani-do> -->
+    <!-- <Datum-vypraveni>2009-10-01T00:00:00</Datum-vypraveni>
+    <Datum-vypraveni-do>2009-10-20T23:59:59</Datum-vypraveni-do> -->
+    <!-- <Podaci-cislo>sfsd5459454</Podaci-cislo>     -->
+    <!-- <Zpusob-odeslani>posta</Zpusob-odeslani> -->
+    <!-- <Druh-zasilky> ... </Druh-zasilky>
+    <Druh-zachazeni> ... </Druh-zachazeni>
+    <Typ-obsahu-zasilky> ... </Typ-obsahu-zasilky>
+    -->
+    <!-- <Id-dorucenky>DEMO2000BKWK</Id-dorucenky> -->
+    <!-- <Id-adresata externi="true">TstEsu1</Id-adresata> -->
+    <Id-adresata externi="false">DEMOSE00C1KK</Id-adresata>
+    <!--
+    <Stav-zasilky> ... </Stav-zasilky>
+    <Priznak-odeslani-originalu> ... </Priznak-odeslani-originalu>
+    <Priznak-sdruzeni> ... </Priznak-sdruzeni>
+    <Id-sdruzujici-zasilky> ... </Id-sdruzujici-zasilky> -->
+    <!-- <Datum-doruceni>2009-12-16T23:00:04</Datum-doruceni> -->
+    <!-- <Datum-ulozeni>2009-12-16T23:00:04</Datum-ulozeni> -->
+    <!--
+    <Kombinace-sluzeb> ... </Kombinace-sluzeb>
+    <Kombinace-sluzeb-text> ... </Kombinace-sluzeb-text>
+    <Priznak-dorucenky> ... </Priznak-dorucenky>
+    -->
+    <!-- <Id-zasilky>DEMOP000EXH2DEMO1</Id-zasilky> -->
+    <!--
+    <Datum-zmeny-od>2009-08-05T00:00:04</Datum-zmeny-od>
+    <Datum-zmeny-do>2009-12-05T13:00:04</Datum-zmeny-do>
+    -->
+    <!-- <Id-funkce-odes externi="false">DEMOSF009Q1S</Id-funkce-odes> -->
+    <!-- <Id-agendy>32000</Id-agendy> -->
+  </Prehled-odeslani>
+</Xrg>

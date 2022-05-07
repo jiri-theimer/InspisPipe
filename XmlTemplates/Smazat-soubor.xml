@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/smazat-soubor/request/v_1.0.0.0">
+  <Smazat-soubor>
+    <Id-dokumentu externi="false">DEMOX000AH6L</Id-dokumentu>
+    <Id-souboru externi="true">TestSob1</Id-souboru>
+    <Typ-vazby>elektronicka-priloha</Typ-vazby>
+  </Smazat-soubor>
+</Xrg>

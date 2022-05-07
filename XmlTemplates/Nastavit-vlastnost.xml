@@ -1,0 +1,18 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/nastavit-vlastnost/request/v_1.0.0.0">
+  <Nastavit-vlastnost>
+    <Id-dokumentu externi="false">DEMOX000A0FN</Id-dokumentu>
+    <Id-profilu>jmenor</Id-profilu>
+    <Id-struktury>jmenor</Id-struktury>
+    <Id-vlastnosti>jmenor</Id-vlastnosti>
+    <Poradove-cislo>2</Poradove-cislo>
+    <Hodnota-retezec>Test</Hodnota-retezec>
+    <!--
+            <Hodnota-celociselna></Hodnota-celociselna>
+            <Hodnota-desetina></Hodnota-desetina>
+            <Hodnota-datum></Hodnota-datum>
+            <Hodnota-datum-cas></Hodnota-datum-cas>
+            <Hodnota-znak></Hodnota-znak>
+            <Popis></Popis>
+        -->
+  </Nastavit-vlastnost>
+</Xrg>

@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zalozit-vlastnost/request/v_1.0.0.0">
+  <Zalozit-vlastnost>
+    <Id-dokumentu externi="false">DEMOX000A0FN</Id-dokumentu>
+    <Typ-objektu>profil</Typ-objektu>
+    <Id-objektu>jmenor</Id-objektu>
+  </Zalozit-vlastnost>
+</Xrg>

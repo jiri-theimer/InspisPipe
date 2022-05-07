@@ -1,0 +1,9 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/kopie-dokumentu/request/v_1.0.0.0">
+  <Kopie-dokumentu>
+    <!-- d360vvm5 DEMOX000A9WJ    dem360g9 DEMOX0011SM0 -->
+    <Id-dokumentu externi="false">DEMOX0011SM0</Id-dokumentu>
+    <Kopirovat-el-obraz>1</Kopirovat-el-obraz>
+    <Kopirovat-el-prilohy>1</Kopirovat-el-prilohy>
+    <Kopirovat-vlastnosti>1</Kopirovat-vlastnosti>
+  </Kopie-dokumentu>
+</Xrg>

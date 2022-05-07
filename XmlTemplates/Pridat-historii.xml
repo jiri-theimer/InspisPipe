@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/pridat-historii/request/v_1.0.0.0">
+  <Pridat-historii>
+    <Id-dokumentu>DEMOX000BCK9</Id-dokumentu>
+    <Text-zmeny>text zmeny</Text-zmeny>
+    <Poznamka>Pokus</Poznamka>
+  </Pridat-historii>
+</Xrg>

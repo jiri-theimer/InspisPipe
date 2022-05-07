@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/uzavri-spis/request/v_1.0.0.0">
+  <Uzavri-spis>
+    <Id-dokumentu externi="false">DEMOX000CBR4</Id-dokumentu>
+    <Id-funkce-uzaviratele externi="false">DEMOSF00A11A</Id-funkce-uzaviratele>
+    <Datum-uzavreni>2003-08-26</Datum-uzavreni>
+  </Uzavri-spis>
+</Xrg>

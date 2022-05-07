@@ -1,0 +1,6 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-pisemnost/request/v_1.0.0.0">
+    <Wfl-dokument>
+        <Vec>Pokusna vec</Vec>
+        <Id-typu-dokumentu>00000400000G</Id-typu-dokumentu>
+    </Wfl-dokument>
+</Xrg>

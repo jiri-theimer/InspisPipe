@@ -1,0 +1,117 @@
+﻿@model InspisPipe.Models.CreateUserViewModel
+
+@{
+
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+
+}
+
+<h3>
+    Vytvoření uživatelského účtu
+</h3>
+
+<form id="form1" asp-controller="CreateUser" asp-action="Index" method="POST">
+    @Html.HiddenFor(model => model.LastCaptchaFormulaHashed)
+    
+    <div class="row">
+        <div class="col-sm-3 col-md-4">
+            E-mail adresa:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-4">
+            E-mail adresa znovu:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.EditorFor(model => model.VerifyEmail, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-4">
+            Titul:
+        </div>
+        <div class="col-sm-1 col-md-2">
+            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-4">
+            Jméno:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.EditorFor(model => model.Firstname, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-4">
+            Příjmení:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.EditorFor(model => model.Lastname, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Ověření, zda jste humanoid:
+        </div>
+        <div class="card-body">
+            @if (Model.captcha.ImageBytes != null)
+            {
+                <img src="@String.Format("data:image/png;base64,{0}", Convert.ToBase64String(Model.captcha.ImageBytes))" />
+                <button type="button" onclick="postback()" class="btn btn-sm btn-light">Jiný příklad</button>
+            }
+
+            <div style="margin-top:6px;">
+                @Html.EditorFor(model => model.CaptchaAnswer, new { htmlAttributes = new { @class = "form-control", @placeholder = "Zapište správný výsledek." } })
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <button type="submit" id="cmdSubmit" class="btn btn-primary">Vytvořit uživatelský účet</button>
+</form>
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+
+        @if (Model.IsFinished)
+        {
+            <text>
+            $("#form1").css("display", "none");
+            </text>
+        }
+
+        $("#cmdSubmit").click(function () {
+            $(this).text("Processing...");
+            $(this).attr("disabled", true);
+            form1.action = "@Url.Action("Index")";
+            $("#LastCaptchaFormulaHashed").val("@Model.captcha.FormulaHashed");
+            form1.submit();
+
+
+        });
+
+
+    });
+
+
+
+    function postback() {
+        form1.action = "@Url.Action("Index", new {oper="postback"})";
+        form1.submit();
+    }
+
+
+
+</script>

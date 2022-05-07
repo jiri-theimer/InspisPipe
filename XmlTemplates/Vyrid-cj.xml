@@ -1,0 +1,12 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/vyrid-cj/request/v_1.0.0.0">
+  <Vyrid-cj>
+    <Id-init-dokumentu externi="false">DEMOX0010F7Z</Id-init-dokumentu>
+    <Id-zpusob-vyrizeni externi="false">Vráceno</Id-zpusob-vyrizeni>
+    <Datum-vyrizeni>2005-11-10</Datum-vyrizeni>
+    <Poznamka-k-vyrizeni>Test</Poznamka-k-vyrizeni>
+    <Id-funkce-schvalovatele externi="false">DEMOSF009R6W</Id-funkce-schvalovatele>
+    <Id-funkce-vyrizovatele externi="false">DEMOSF009R6W</Id-funkce-vyrizovatele>
+    <Id-spisoveho-planu>2005</Id-spisoveho-planu>
+    <Id-spisoveho-znaku>104.2.3.</Id-spisoveho-znaku>
+  </Vyrid-cj>
+</Xrg>

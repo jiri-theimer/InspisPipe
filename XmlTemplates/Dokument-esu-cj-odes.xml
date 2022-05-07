@@ -1,0 +1,48 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-sdruzene/dokument-esu-cj-odes/request/v_1.0.0.0">
+  <!-- s366tts3 -->
+  <Gin-esu>
+    <Id-esu externi="true">CSD_ID_682516</Id-esu>
+    <Typ-esu>pravnicka-osoba</Typ-esu>
+    <Nazev>MEDIAPRESS Bratislava, s</Nazev>
+    <!--
+    <Psc>85101</Psc>
+    <Obec>Bratislava 5</Obec>
+    <Ulice>Muchovo námestie 8</Ulice>
+    <Cislo-orientacni>
+    </Cislo-orientacni>
+    <Obchodni-jmeno>MEDIAPRESS Bratislava, spol.s r.o.</Obchodni-jmeno>
+    <Typ-organizace>30</Typ-organizace>
+    <Ico>31384421</Ico>
+    <Radek-obalky0>
+    </Radek-obalky0>
+    <Radek-obalky1>
+    </Radek-obalky1>
+    <Radek-obalky2>MEDIAPRESS Bratislava, spol.s r.o.</Radek-obalky2>
+    <Radek-obalky3>
+    </Radek-obalky3>
+    <Radek-obalky4>Muchovo námestie 8</Radek-obalky4>
+    <Radek-obalky5>Bratislava 5</Radek-obalky5>
+    <Radek-obalky6>85101</Radek-obalky6>
+    <Radek-obalky7>Slovensko</Radek-obalky7>
+    -->
+  </Gin-esu>
+  <Wfl-dokument>
+    <Id-dokumentu externi="true">3/08/000340-36/81/672772</Id-dokumentu>
+    <Vec>3/08/000340-36/81/672772-platobný výmer</Vec>
+    <Id-typu-dokumentu>DEMO0401918O</Id-typu-dokumentu>
+  </Wfl-dokument>
+  <Zaloz-cj>
+    <Denik-cj>SPIS</Denik-cj>
+    <Rok-cj>2006</Rok-cj>
+  </Zaloz-cj>
+  <Vloz-do-spisu>
+    <Id-spisu externi="false">DEMOX000GK1J</Id-spisu>
+  </Vloz-do-spisu>
+  <Odeslani>
+    <Zpusob-doruceni>posta</Zpusob-doruceni>
+    <Druh-zasilky>psani</Druh-zasilky>
+    <Druh-zachazeni>do vl. r. a zastup (modra)</Druh-zachazeni>
+    <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
+    <Typ-obsahu-zasilky>neurceno</Typ-obsahu-zasilky>
+  </Odeslani>
+</Xrg>

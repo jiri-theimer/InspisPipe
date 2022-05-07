@@ -1,0 +1,18 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/odeslani/request/v_1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Odeslani>
+    <Id-dokumentu>DEMOX000IT4N</Id-dokumentu>
+    <Zpusob-doruceni>ds e-vypravna</Zpusob-doruceni>
+    <Id-adresata>DEMOSE00APN7</Id-adresata>
+    <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
+    <Typ-obsahu-zasilky>neurceno</Typ-obsahu-zasilky>
+    <Poznamka>Test GORDIC - podací grafy</Poznamka>
+    <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>
+    <Kombinace-sluzeb>1</Kombinace-sluzeb>
+    <Druh-zasilky-pro-kombinaci>doporucena zasilka</Druh-zasilky-pro-kombinaci>
+  </Odeslani>
+  <Predpis>
+    <Odes-komu>38hade2</Odes-komu>
+    <Odes-od>wkcadfj</Odes-od>
+    <Sezn-id-priloh>DEMOAWX0BBG4</Sezn-id-priloh>
+  </Predpis>
+</Xrg>

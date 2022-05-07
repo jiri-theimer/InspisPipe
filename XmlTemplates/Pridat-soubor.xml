@@ -1,0 +1,20 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/pridat-soubor/request/v_1.0.0.0">
+  <Pridat-soubor>
+    <!--
+    <Id-dokumentu externi="false">DEMOX000AH6L</Id-dokumentu>
+    <Id-souboru externi="true">TestSob1</Id-souboru>
+    <Jmeno-souboru>priloha1.txt</Jmeno-souboru>
+    <Typ-vazby>elektronicka-priloha</Typ-vazby>
+    <Popis-souboru>Testovací příloha - PSvoboda</Popis-souboru>
+    <Podrobny-popis-souboru>Testovaci e. příloha XRG-SSL.</Podrobny-popis-souboru>
+    <Data>VGVzdCBmaWxl</Data>
+    -->
+    <Id-dokumentu externi="false">DEMOX000AH6L</Id-dokumentu>
+    <!-- <Id-souboru externi="true">TestSob1</Id-souboru> -->
+    <Jmeno-souboru>obraz.pdf</Jmeno-souboru>
+    <Typ-vazby>elektronicky-obraz</Typ-vazby>
+    <Popis-souboru>Testovaci obraz - Sob</Popis-souboru>
+    <Podrobny-popis-souboru>Testovaci el. obraz</Podrobny-popis-souboru>
+    <Data>VGVzdCBmaWxl</Data>
+  </Pridat-soubor>
+</Xrg>

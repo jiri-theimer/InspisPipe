@@ -1,0 +1,8 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/podepsat-soubor/request/v_1.0.0.0">
+  <Podepsat-soubor>
+    <Id-dokumentu externi="false">DEMOX000NPXL</Id-dokumentu>
+    <!-- <Id-souboru externi="false">..</Id-souboru> -->
+    <Typ-vazby>elektronicky-obraz</Typ-vazby>
+    <Typ-podpisu>pdf-vnitrni</Typ-podpisu>
+  </Podepsat-soubor>
+</Xrg>

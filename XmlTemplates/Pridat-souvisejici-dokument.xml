@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/pridat-souvisejici-dokument/request/v_1.0.0.0">
+  <Pridat-souvisejici-dokument>
+    <Typ-vazby>sekundarni vazba</Typ-vazby>
+    <Id-dokumentu externi="false">DEMOX000D4Y5</Id-dokumentu>
+    <Id-souvisejiciho-dokumentu externi="false">DEMOX000BEGF</Id-souvisejiciho-dokumentu>
+  </Pridat-souvisejici-dokument>
+</Xrg>

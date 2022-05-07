@@ -1,0 +1,13 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-spis/request/v_1.0.0.0">
+  <Zaloz-spis>
+    <Id-spisu externi="true"> TestExt1 </Id-spisu>
+    <Id-dokumentu externi="false">DEMOX000ATNW</Id-dokumentu>
+    <!--
+    <Denik-spis>OUR</Denik-spis>
+    <Rok-spis>2005</Rok-spis>
+    <Poradove-cislo-spis>2</Poradove-cislo-spis>
+    -->
+  </Zaloz-spis>
+</Xrg>
+<!-- S00JAIE0A02R\goro -->
+<!-- http://localhost/Ssl/ssl.asmx -->

@@ -1,0 +1,53 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/edit-pisemnost/request/v_1.0.0.0">
+  <Wfl-dokument>
+    <Id-dokumentu externi="false">DEMOX0010V2K</Id-dokumentu>
+    <!--<Vec>Nové INFO: HC DUKLA</Vec>
+            <Znacka> ... </Znacka>
+            <Id-typu-dokumentu> ... </Id-typu-dokumentu>
+            <Priznak-fyz-existence> ... </Priznak-fyz-existence>-->
+  </Wfl-dokument>
+  <Doruceni>
+    <!--           
+            <Stat> ... </Stat>
+            <Psc> ... </Psc>
+            <Psc-nazev> ... </Psc-nazev>
+            <Datum-odeslani> ... </Datum-odeslani>
+            <Znacka-odesilatele> ... </Znacka-odesilatele>
+            <Datum-ze-dne> ... </Datum-ze-dne>
+            <Podaci-cislo> ... </Podaci-cislo>
+            <Zpusob-doruceni> ... </Zpusob-doruceni>
+            -->
+    <!-- <Druh-zasilky>doporucena zasilka - standard</Druh-zasilky> -->
+    <!--
+            <Druh-zachazeni> ... </Druh-zachazeni>
+            <Datum-prijmu-podani> ... </Datum-prijmu-podani>
+            <Id-odesilatele externi=''> ... </Id-odesilatele>
+            <Pocet-listu> ... </Pocet-listu>
+            <Pocet-priloh> ... </Pocet-priloh>
+            <Pocet-stran> ... </Pocet-stran>
+            <Pocet-kopii> ... </Pocet-kopii>
+            -->
+    <Pocet-listu-priloh>1</Pocet-listu-priloh>
+    <!--
+            <Poznamka-k-doruceni> ... </Poznamka-k-doruceni>
+            -->
+  </Doruceni>
+  <Ssl-dokument>
+    <Poznamka>testík zmeny poctu priloh</Poznamka>
+    <!--<Pristup> ... </Pristup>
+            <Vec-podrobne> ... </Vec-podrobne>
+            <Poznamka> ... </Poznamka>
+            <Pocet-listu> ... </Pocet-listu>
+            <Pocet-priloh> ... </Pocet-priloh>
+            <Pocet-stran> ... </Pocet-stran>
+            <Pocet-kopii> ... </Pocet-kopii>
+            -->
+    <Pocet-listu-priloh>2</Pocet-listu-priloh>
+    <!--
+            <Umisteni> ... </Umisteni>
+            <Id-funkce-resitele externi=''> ... </Id-funkce-resitele>
+            -->
+    <Id-spisoveho-planu>2006</Id-spisoveho-planu>
+    <Id-spisoveho-znaku>54.4.2</Id-spisoveho-znaku>
+  </Ssl-dokument>
+</Xrg>

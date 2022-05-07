@@ -1,0 +1,75 @@
+﻿@model InspisPipe.Models.LoginViewModel
+
+
+
+@{
+    ViewBag.Title = "AD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AD</h2>
+<h4>@ViewBag.Message1</h4>
+
+
+<table>
+    <tr>
+        <td>
+            IdentityName:
+        </td>
+        <td>
+            @ViewBag.IdentityName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            UserPrincipalName:
+        </td>
+        <td>
+            @ViewBag.UserPrincipalName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            EmailAddress:
+        </td>
+        <td>
+            @ViewBag.EmailAddress
+        </td>
+    </tr>
+    <tr>
+        <td>
+            DisplayName:
+        </td>
+        <td>
+            @ViewBag.DisplayName
+        </td>
+    </tr>
+</table>
+
+
+<hr />
+<h4>Ověřit přihlášení do windows domény</h4>
+<form id="form1" asp-controller="Home" asp-action="AD" method="POST">
+
+    <div class="row">
+        <div class="col-sm-1 col-md-2">
+            Uživatelské jméno:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.EditorFor(model => model.UserName)
+        </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+        <div class="col-sm-1 col-md-2">
+            Heslo:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.PasswordFor(model => model.Password)
+        </div>
+    </div>
+
+
+    <button type="submit" id="cmdSubmit">Ověřit přihlášení do domény</button>
+</form>
+<h4>@ViewBag.Message2</h4>
+

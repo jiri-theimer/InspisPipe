@@ -1,0 +1,13 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-pisemnost/request/v_1.0.0.0">
+    <Wfl-dokument>
+        <Id-dokumentu externi="true">aaaa</Id-dokumentu>    
+        <Vec>Pokusná vìc</Vec>
+        <Znacka>AAAA1234</Znacka>
+        <Id-typu-dokumentu>00000400000G</Id-typu-dokumentu>
+        <Priznak-fyz-existence>existuje</Priznak-fyz-existence>
+    </Wfl-dokument>
+</Xrg>
+
+<!-- KVOPAIE0A01R\mikr  -->
+<!-- Vlastni dokument se zadanym typem-->
+<!-- Se zadaným cizím identifikátorem -->

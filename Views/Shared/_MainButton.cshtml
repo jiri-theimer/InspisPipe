@@ -1,0 +1,11 @@
+﻿@model InspisPipe.Models.MyMainButton
+
+<a href="@Model.Url" class="btn btn-secondary mainbutton">
+    <h5>@Model.MainText</h5>
+    @if (!string.IsNullOrEmpty(Model.AddText))
+    {
+        <i style="color:lightgray;">@Model.AddText</i>
+    }
+
+</a>
+

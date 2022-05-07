@@ -1,0 +1,106 @@
+﻿@model InspisPipe.Models.BaseViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+
+    <link rel="stylesheet" href="~/Scripts/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Content/Site.css" />
+
+    <script src="~/Scripts/jquery/dist/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+
+
+            var ofs = $("#divWrapperBody").offset();
+            var hei = $("#divWrapperBody").height();
+           
+            var hh = -50+(window.innerHeight - hei) / 2;
+
+            //$("#divWrapperBody").css("margin-top", hh + "px");
+
+
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <div id="divWrapperBody">
+        <div id="divBodyGradient">
+            <div id="divLoginHeader">
+                <img id="imgLoginHeader" src="~/Content/Images/logo_login_csi.png" />
+            </div>
+            <div class="header-bar">
+                <div class="header-bar-text"><span id="lblApplication">Systém pro sběr a vyhodnocení dat</span></div>
+            </div>
+
+
+            <div class="row" style="margin-left:1px;margin-top:20px;">
+                <div class="col-9" id="divWrapperContent">
+                    @RenderBody()
+
+                    @if (Model.Messages != null && Model.Messages.Count() > 0)
+                    {
+
+                        <a href="#" id="messages1"></a>
+                        foreach (var c in Model.Messages)
+                        {
+
+                            @Html.Partial("_Message", c)
+                        }
+                    }
+                </div>
+                <div class="col-3">
+                    @if (Model.MainButtons != null && Model.MainButtons.Count() > 0)
+                    {
+
+                        <a href="#" id="messages1"></a>
+                        foreach (var c in Model.MainButtons)
+                        {
+                            <div>
+                                @Html.Partial("_MainButton", c)
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="bottom-bar-wrapper">
+                <div class="bottom-bar">
+                    <div class="bottom-bar-first-item"><a href="http://www.csicr.cz"><b>Česká školní inspekce</b><br />www.csicr.cz</a></div>
+
+                    <div class="bottom-bar-logo"><img id="imgRightBottom" src="~/Content/Images/login-inverzni-small.png" alt="CSI" /></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>

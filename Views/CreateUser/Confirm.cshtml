@@ -1,0 +1,42 @@
+﻿@model InspisPipe.Models.CreateUserConfirmViewModel
+
+@{
+
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+
+}
+
+
+@if (!Model.IsNotPossible && Model.RecJ03 != null && Model.RecJ03.j03MembershipUserId != null)
+{
+    <h3>
+        Účet v aplikaci InspIS DATA byl aktivován.
+    </h3>
+
+    <table>
+        <tr>
+            <td>
+                Přihlašovací jméno:
+            </td>
+            <td>
+                @Model.RecJ03.j03Login
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Heslo:
+            </td>
+            <td>
+                <i>Bylo odesláno poštovní zprávou na vaši e-mailovou adresu.</i>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="~/Login">Přihlásit se</a>
+            </td>
+        </tr>
+    </table>
+}
+
+

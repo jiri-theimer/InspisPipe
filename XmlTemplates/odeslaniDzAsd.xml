@@ -1,0 +1,47 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/odeslani/request/v_1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Odeslani>
+    <Id-dokumentu>DEMOX000L6B2</Id-dokumentu>
+    <!-- <Podaci-cislo xsi:nil="true" /> -->
+    <Zpusob-doruceni>ds e-vypravna</Zpusob-doruceni>
+    <Druh-zasilky>neurceno</Druh-zasilky>
+    <Druh-zachazeni>neurceno</Druh-zachazeni>
+    <!-- <Id-dorucenky></Id-dorucenky> -->
+    <Id-adresata>DEMOSE00B5XC</Id-adresata>
+    <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
+    <Typ-obsahu-zasilky>neurceno</Typ-obsahu-zasilky>
+    <Poznamka>Test předpisu dz-evyp ADS</Poznamka>
+    <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>
+    <!-- <Rezim></Rezim> -->
+    <!--
+    <Kombinace-sluzeb>
+    </Kombinace-sluzeb> -->
+  </Odeslani>
+  <Predpis>
+    <Odes-komu>avdbt4q</Odes-komu>
+    <Odes-od>sgda85n</Odes-od>
+    <!--
+    <Mail-cc></Mail-cc>
+    <Mail-bcc></Mail-bcc>    
+    <Mail-predmet></Mail-predmet>    
+    -->
+    <Sezn-id-priloh>DEMOAWX0D0B8</Sezn-id-priloh>
+    <!--
+    <Mail-body></Mail-body>
+    <Ip-adr></Ip-adr>
+    -->
+    <Priz-sign>0</Priz-sign>
+    <Priz-crypt>0</Priz-crypt>
+    <Priz-seznam-priloh>0</Priz-seznam-priloh>
+    <Priz-historie>0</Priz-historie>
+    <Priz-uziv-pozn>0</Priz-uziv-pozn>
+    <Priz-el-obraz>0</Priz-el-obraz>
+    <!-- <Id-vnitr-adr>Id-vnitr-adr</Id-vnitr-adr> -->
+    <!--
+    <Utvar>Utvar</Utvar>
+    <Zakon-dz>Zakon-dz</Zakon-dz>
+    <Paragraf-dz>Paragraf-dz</Paragraf-dz>
+    <Odstavec-dz>Odstravec-dz</Odstavec-dz>
+    -->
+    <!-- <Zakaz-dor-fikci>1</Zakaz-dor-fikci> -->
+  </Predpis>
+</Xrg>

@@ -1,0 +1,9 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/edit-pisemnost/request/v_1.0.0.0">
+  <Wfl-dokument>
+    <Id-dokumentu>MHMPXOOPBKRM</Id-dokumentu>
+    <Vec>zmena veci</Vec>
+  </Wfl-dokument>
+  <Ssl-dokument>
+    <Vec-podrobne>zmena veci podrobne</Vec-podrobne>
+  </Ssl-dokument>
+</Xrg>

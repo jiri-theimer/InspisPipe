@@ -1,0 +1,9 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/smazat-vlastnost/request/v_1.0.0.0">
+  <Smazat-vlastnost>
+    <Id-dokumentu externi="false">DEMOX000A0FN</Id-dokumentu>
+    <Id-profilu>jmenor</Id-profilu>
+    <Id-struktury>jmenor</Id-struktury>
+    <Id-vlastnosti>jmenor</Id-vlastnosti>
+    <Poradove-cislo>1</Poradove-cislo>
+  </Smazat-vlastnost>
+</Xrg>

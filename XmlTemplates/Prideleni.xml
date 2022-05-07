@@ -1,0 +1,9 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/prideleni/request/v_1.0.0.0">
+  <Prideleni>
+    <Id-dokumentu externi="false">DEMOX000A0TP</Id-dokumentu>
+    <Id-uzlu externi="false">DEMOSS00A1QI</Id-uzlu>
+    <Id-osoby externi="false"> DEMOSR00A66Y </Id-osoby>
+    <Ucel-distribuce> test </Ucel-distribuce>
+    <Prime-prideleni>prime-prideleni</Prime-prideleni>
+  </Prideleni>
+</Xrg>

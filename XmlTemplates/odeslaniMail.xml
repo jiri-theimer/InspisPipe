@@ -1,0 +1,57 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/odeslani/request/v_1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Odeslani>
+    <!-- d360vvm5  ixp=DEMOX000M3SX esu=DEMOSE00CQZM, ixbOB DEMOAWX0KBIL;DEMOAWX0KFRK -->
+    <!-- d364vvm5  ixp=DEMOX000AH6L esu=DEMOSE009Q40, ixbOB DEMOAWX0KT6R; ixbPri DEMOAWX0KT5W -->
+    <Id-dokumentu>DEMOX000AH6L</Id-dokumentu>
+    <Podaci-cislo xsi:nil="true" />
+    <Zpusob-doruceni>elektronicka posta</Zpusob-doruceni>
+    <Druh-zasilky>neurceno</Druh-zasilky>
+    <Druh-zachazeni>dodejka</Druh-zachazeni>
+    <Id-dorucenky>
+    </Id-dorucenky>
+    <Id-adresata>DEMOSE009Q40</Id-adresata>
+    <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
+    <Typ-obsahu-zasilky>stejnopis</Typ-obsahu-zasilky>
+    <Poznamka>Test přímého odeslání mailu XRG 464.12</Poznamka>
+    <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>
+    <!--
+    <Kombinace-sluzeb>1,3</Kombinace-sluzeb>
+    <Druh-zasilky-pro-kombinaci>psani</Druh-zasilky-pro-kombinaci>
+    -->
+  </Odeslani>
+  <Predpis>
+    <Odes-komu>Petr_Svoboda@gordic.cz</Odes-komu>
+    <Odes-od>Mr_Novak@gordic.cz</Odes-od>
+    <Mail-cc>
+    </Mail-cc>
+    <Mail-bcc>
+    </Mail-bcc>
+    <Mail-predmet>Test předpisu odeslání mailu z XRG</Mail-predmet>
+    <Sezn-id-priloh>DEMOAWX0KT5W</Sezn-id-priloh>
+    <Mail-body>Hej, toto je TEST XRG 464.12!</Mail-body>
+    <Ip-adr>172.17.60.23</Ip-adr>
+    <!--
+    <Priz-sign>0</Priz-sign>
+    <Priz-crypt>0</Priz-crypt>
+    -->
+    <Priz-seznam-priloh>0</Priz-seznam-priloh>
+    <Priz-historie>0</Priz-historie>
+    <Priz-uziv-pozn>0</Priz-uziv-pozn>
+    <Priz-el-obraz>1</Priz-el-obraz>
+    <Priz-el-prilohy>0</Priz-el-prilohy>
+    <!--
+    <Id-vnitr-adr>...</Id-vnitr-adr>    
+    <Utvar></Utvar>
+    <Zakon-dz></Zakon-dz>
+    <Paragraf-dz></Paragraf-dz>
+    <Odstavec-dz></Odstavec-dz>
+    -->
+    <Zakon-rok>2010</Zakon-rok>
+    <Zakon-cislo>333</Zakon-cislo>
+    <Paragraf>5</Paragraf>
+    <Odstavec>2</Odstavec>
+    <Pismeno>c</Pismeno>
+    <Priz-do-vl-rukou>1</Priz-do-vl-rukou>
+    <K-rukam>Mgr. P.Svoboda</K-rukam>
+  </Predpis>
+</Xrg>

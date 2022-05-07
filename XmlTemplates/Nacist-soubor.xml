@@ -1,0 +1,9 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/nacist-soubor/request/v_1.0.0.0">
+  <Nacist-soubor>
+    <!-- d364vvg1 ixp DEMOX000AH6L, ixb ext TestSob1 -->
+    <!-- VITA366 ixp DEMOX000J027  ixb DEMOAWX0BFYU   -->
+    <Id-dokumentu externi="false">DEMOX000J027</Id-dokumentu>
+    <Id-souboru externi="false">DEMOAWX0BFYU</Id-souboru>
+    <Typ-vazby>elektronicka-priloha</Typ-vazby>
+  </Nacist-soubor>
+</Xrg>

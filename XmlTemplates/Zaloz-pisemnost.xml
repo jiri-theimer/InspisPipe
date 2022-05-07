@@ -1,0 +1,42 @@
+<Xrg xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-pisemnost/request/v_1.0.0.0">
+  <Wfl-dokument>
+    <Id-dokumentu externi="true">MarbesPis6-01</Id-dokumentu>
+    <Vec>Test pro Marbes, bod 6 č.1</Vec>
+    <Znacka xsi:nil="true" />
+    <Id-typu-dokumentu>DEMO0400000P</Id-typu-dokumentu>
+  </Wfl-dokument>
+  <Doruceni>
+    <Stat>CZE</Stat>
+    <Psc>58601</Psc>
+    <!-- <Psc-nazev> ... </Psc-nazev>  -->
+    <Datum-odeslani>2009-06-15</Datum-odeslani>
+    <!-- <Znacka-odesilatele> ... </Znacka-odesilatele>  -->
+    <Datum-ze-dne>2009-06-15</Datum-ze-dne>
+    <!-- <Podaci-cislo></Podaci-cislo>  -->
+    <Zpusob-doruceni>posta</Zpusob-doruceni>
+    <Druh-zasilky>psani</Druh-zasilky>
+    <Druh-zachazeni>obycejna</Druh-zachazeni>
+    <!-- <Datum-prijmu-podani></Datum-prijmu-podani>  -->
+    <Id-odesilatele externi="false">DEMOSE00AEA5</Id-odesilatele>
+    <Pocet-listu>2</Pocet-listu>
+    <Pocet-priloh>1</Pocet-priloh>
+    <!-- <Pocet-stran> ... </Pocet-stran> -->
+    <!-- <Pocet-kopii></Pocet-kopii>  -->
+    <Pocet-listu-priloh>4</Pocet-listu-priloh>
+    <Poznamka-k-doruceni>Test doručení pro Marbes</Poznamka-k-doruceni>
+  </Doruceni>
+  <Ssl-dokument>
+    <Vec-podrobne>TEST</Vec-podrobne>
+    <Poznamka>Testování</Poznamka>
+    <Pocet-listu xsi:nil="true" />
+    <Pocet-priloh xsi:nil="true" />
+    <Pocet-stran xsi:nil="true" />
+    <Pocet-kopii xsi:nil="true" />
+    <Umisteni xsi:nil="true" />
+    <Id-funkce-resitele xsi:nil="true" />
+    <!--
+    <Id-spisoveho-planu>1998</Id-spisoveho-planu>
+    <Id-spisoveho-znaku>55.</Id-spisoveho-znaku>
+    -->
+  </Ssl-dokument>
+</Xrg>

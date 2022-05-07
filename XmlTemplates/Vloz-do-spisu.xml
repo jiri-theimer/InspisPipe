@@ -1,0 +1,6 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/vloz-do-spisu/request/v_1.0.0.0">
+  <Vloz-do-spisu>
+    <Id-dokumentu externi="false">DEMOX0010EDC</Id-dokumentu>
+    <Id-spisu externi="false">DEMOX0010DPV</Id-spisu>
+  </Vloz-do-spisu>
+</Xrg>

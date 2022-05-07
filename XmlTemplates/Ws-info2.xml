@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/ws-info/request/v_1.0.0.0">
+  <Ws-info>
+    <Typ-pozadavku>
+         ginis
+    </Typ-pozadavku>
+  </Ws-info>
+</Xrg>

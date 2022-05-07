@@ -1,0 +1,7 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/pravni-moc-spisu/request/v_1.0.0.0">
+  <Pravni-moc-spisu>
+    <!-- TEST DEMOX000ARZM = chyba -> jde o dokument -->
+    <Id-dokumentu externi="false">DEMOX000XTWC</Id-dokumentu>
+    <Datum-nabyti-pravni-moci>2010-09-20</Datum-nabyti-pravni-moci>
+  </Pravni-moc-spisu>
+</Xrg>

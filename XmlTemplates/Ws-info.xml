@@ -1,0 +1,5 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ws-info/request/v_1.0.0.0">
+  <Ws-info>
+    <Typ-pozadavku>kompletni</Typ-pozadavku>
+  </Ws-info>
+</Xrg>

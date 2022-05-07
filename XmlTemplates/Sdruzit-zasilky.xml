@@ -1,0 +1,10 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/sdruzit-zasilky/request/v_1.0.0.0">
+  <Sdruzit-zasilky>
+    <Id-zasilky-sdruzene externi="false">DEMOX000D4Y5DEMO1</Id-zasilky-sdruzene>
+    <Id-zasilky externi="false">DEMOX000D4Y5DEMO1</Id-zasilky>
+  </Sdruzit-zasilky>
+  <Sdruzit-zasilky>
+    <Id-zasilky-sdruzene externi="false">DEMOX000D4Y5DEMO1</Id-zasilky-sdruzene>
+    <Id-zasilky externi="false">DEMOX000CUIODEMO1</Id-zasilky>
+  </Sdruzit-zasilky>
+</Xrg>

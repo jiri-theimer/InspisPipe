@@ -1,0 +1,8 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/predani/request/v_1.0.0.0">
+  <Predani>
+    <Id-dokumentu externi="false">DEMOX000A0LT</Id-dokumentu>
+    <Id-funkce-vlastnika externi="false">DEMOSF00A0YW</Id-funkce-vlastnika>
+    <Id-osoby-vlastnika externi="false">DEMOSR00A0NR</Id-osoby-vlastnika>
+    <Ucel-distribuce>ccc</Ucel-distribuce>
+  </Predani>
+</Xrg>

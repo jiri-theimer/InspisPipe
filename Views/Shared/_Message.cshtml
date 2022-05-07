@@ -1,0 +1,15 @@
+﻿@model InspisPipe.Models.MyMessage
+
+
+
+<div class="alert alert-@Model.MessageStyle" role="alert" style="margin-top:2px;">
+    @if (Model.MessageHeader != null)
+    {
+        @Html.Raw(Model.MessageHeader)
+        <hr />
+    }
+    @Html.Raw(Model.MessageText)
+</div>
+
+
+

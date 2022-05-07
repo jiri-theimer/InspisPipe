@@ -1,0 +1,6 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/storno-cj/request/v_1.0.0.0">
+  <Storno-cj>
+    <Id-init-dokumentu externi="false">DEMOX0010F1T</Id-init-dokumentu>
+    <Duvod>TestStorna</Duvod>
+  </Storno-cj>
+</Xrg>

@@ -1,0 +1,12 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/vyprav-zasilku/request/v_1.0.0.0">
+  <Vyprav-zasilku>
+    <!-- wfldprj.s_dor=10 -->
+    <Id-zasilky>DEMOX000Y1IDDEMO3</Id-zasilky>
+    <Stat>CZE</Stat>
+    <Psc>58601</Psc>
+    <!--
+    <Dorucovaci-sluzba>DS</Dorucovaci-sluzba>
+    -->
+    <Datum-vypraveni>2008-01-31</Datum-vypraveni>
+  </Vyprav-zasilku>
+</Xrg>

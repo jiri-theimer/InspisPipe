@@ -1,0 +1,24 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-spis-bez-iniciacniho-dokumentu/request/v_1.0.0.0">
+  <Zaloz-spis-bez-iniciacniho-dokumentu>
+    <Id-spisu externi="true"> TestSob3 </Id-spisu>
+    <Vec>Test Xrg-Ssl 460.5</Vec>
+    <Znacka>SOB</Znacka>
+    <!-- <Id-typu-dokumentu></Id-typu-dokumentu> -->
+    <Misto-vzniku>JI</Misto-vzniku>
+    <!--
+            <Pristup></Pristup>
+            <Id-spisoveho-planu></Id-spisoveho-planu>
+            <Id-spisoveho-znaku></Id-spisoveho-znaku>
+            <Vec-podrobne></Vec-podrobne>
+            <Poznamka></Poznamka>
+            <Datum-prijmu-podani></Datum-prijmu-podani>
+            <Umisteni></Umisteni>      
+            -->
+    <Denik-spis>SPZ</Denik-spis>
+    <Rok-spis>2009</Rok-spis>
+    <!--
+            <Poradove-cislo-spis>3</Poradove-cislo-spis>            
+            <Doplnek-cj></Doplnek-cj>
+            -->
+  </Zaloz-spis-bez-iniciacniho-dokumentu>
+</Xrg>

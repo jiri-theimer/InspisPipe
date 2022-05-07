@@ -1,0 +1,33 @@
+﻿@model InspisPipe.Models.PasswordRecoveryViewModel
+
+@{
+
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+
+}
+
+<h3>
+    Obnovení zapomenutého hesla
+</h3>
+
+@if (!Model.IsNotPossible)
+{
+    <form id="form1" asp-controller="Login" asp-action="PasswordRecovery" method="POST">
+
+        <div class="row">
+            <div class="col-sm-3 col-md-4">
+                Přihlašovací jméno (e-mail)
+            </div>
+            <div class="col-sm-3 col-md-4">
+                @Html.EditorFor(model => model.LoginEmail, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+
+
+        <button type="submit" id="cmdSubmit" class="btn btn-primary">Zaslat odkaz pro změnu hesla</button>
+    </form>
+
+}
+
+

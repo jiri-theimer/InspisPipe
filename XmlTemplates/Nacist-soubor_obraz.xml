@@ -1,0 +1,8 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/nacist-soubor/request/v_1.0.0.0">
+  <Nacist-soubor>
+    <!-- d360vvm5 ixp DEMOX000AH6L, ixb DEMOAWX0PR2W -->
+    <Id-dokumentu externi="false">DEMOX000AH6L</Id-dokumentu>
+    <Id-souboru externi="false">DEMOAWX0PR2W</Id-souboru>
+    <Typ-vazby>elektronicky-obraz</Typ-vazby>
+  </Nacist-soubor>
+</Xrg>

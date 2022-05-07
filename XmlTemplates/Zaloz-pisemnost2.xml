@@ -1,0 +1,24 @@
+<Xrg xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/zaloz-pisemnost/request/v_1.0.0.0">
+  <Wfl-dokument>
+    <Id-dokumentu xsi:nil="true" />
+    <Vec>oznámení o zahájení řízení - stanoviska: Stavba RD</Vec>
+    <Znacka xsi:nil="true" />
+    <Id-typu-dokumentu>000004019310</Id-typu-dokumentu>
+  </Wfl-dokument>
+  <Doruceni>
+    <Stat>CZE</Stat>
+    <Druh-zachazeni>neurceno</Druh-zachazeni>
+    <Datum-prijmu-podani>2007-03-20T00:00:00</Datum-prijmu-podani>
+    <Id-odesilatele externi="true">TstEsu1</Id-odesilatele>
+  </Doruceni>
+  <Ssl-dokument>
+    <Vec-podrobne>oznámení o zahájení řízení - stanoviska: Stavba RD</Vec-podrobne>
+    <Poznamka xsi:nil="true" />
+    <Pocet-listu xsi:nil="true" />
+    <Pocet-priloh xsi:nil="true" />
+    <Pocet-stran xsi:nil="true" />
+    <Pocet-kopii xsi:nil="true" />
+    <Umisteni xsi:nil="true" />
+    <Id-funkce-resitele xsi:nil="true" />
+  </Ssl-dokument>
+</Xrg>

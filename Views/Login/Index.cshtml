@@ -1,0 +1,52 @@
+﻿@model InspisPipe.Models.LoginViewModel
+
+@{
+
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+    
+
+}
+
+
+
+
+<h3>
+    Přihlášení do systému
+</h3>
+<form id="form1" asp-controller="Login" asp-action="Index" method="POST">
+    @Html.HiddenFor(model => model.SourceUrl)
+    <div class="row">
+        <div class="col-sm-2 col-md-3">
+            Uživatelské jméno:
+        </div>
+        <div class="col-sm-3 col-md-4">
+
+            @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+        <div class="col-sm-2 col-md-3">
+            Heslo:
+        </div>
+        <div class="col-sm-3 col-md-4">
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+        </div>
+    </div>
+
+
+    <button type="submit" id="cmdSubmit" class="btn btn-primary">Přihlásit se</button>
+</form>
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var prevurl = document.referrer;
+        if (prevurl != null && prevurl != "") {
+            alert("document.referrer: " + prevurl);
+        }
+
+    });
+</script>

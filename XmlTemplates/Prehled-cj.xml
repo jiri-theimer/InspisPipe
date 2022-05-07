@@ -1,0 +1,31 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/prehled-cj/request/v_1.0.0.0">
+  <Prehled-cj>
+    <!-- <Id-funkce-akt externi="false">DEMOSF009R46</Id-funkce-akt> -->
+    <Datum-podani-od>2006-01-01</Datum-podani-od>
+    <Datum-podani-do>2010-01-01</Datum-podani-do>
+    <!-- <Id-agendy>20</Id-agendy> -->
+    <Stav-cj>nevyrizeno</Stav-cj>
+    <!--<Id-funkce-akt externi=''> ... </Id-funkce-akt>
+            <Id-uzlu-akt externi=''> ... </Id-uzlu-akt>
+            <Datum-podani-od> ... </Datum-podani-od>
+            <Datum-podani-do> ... </Datum-podani-do>
+            <Id-agendy> ... </Id-agendy>
+            <Id-odesilatele externi=''> ... </Id-odesilatele>
+            <Stav-cj> ... </Stav-cj>
+            <Id-typu-dokumentu> ... </Id-typu-dokumentu>
+            -->
+    <!--
+    <Termin-vyrizeni-pred>2009-12-12</Termin-vyrizeni-pred>
+    <Termin-vyrizeni-po>2009-12-01</Termin-vyrizeni-po>
+    -->
+    <Denik-cj>MV</Denik-cj>
+    <Rok-cj>2008</Rok-cj>
+    <!-- <Poradove-cislo-cj>43</Poradove-cislo-cj> -->
+  </Prehled-cj>
+  <Rizeni-prehledu>
+    <Priznak-generovani>generovat</Priznak-generovani>
+    <Radek-od>0</Radek-od>
+    <Radek-do>10</Radek-do>
+    <Priznak-zachovani>nezachovavat</Priznak-zachovani>
+  </Rizeni-prehledu>
+</Xrg>

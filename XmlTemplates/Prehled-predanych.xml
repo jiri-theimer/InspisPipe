@@ -1,0 +1,22 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/prehled-predanych/request/v_1.0.0.0">
+  <Prehled-predanych>
+    <Id-uzlu-od>DEMOSS00A021</Id-uzlu-od>
+    <Id-funkce-od externi="false">DEMOSF00A01H</Id-funkce-od>
+    <!--
+    <Id-osoby-od externi="false">DEMOSR00A02O</Id-osoby-od>
+    -->
+    <Id-uzlu-do>DEMOSS00A016</Id-uzlu-do>
+    <Id-funkce-do externi="false">DEMOSF00A0ZR</Id-funkce-do>
+    <Datum-od>2008-07-01</Datum-od>
+    <Datum-do>2008-08-01</Datum-do>
+    <!--
+    <Id-agendy>20</Id-agendy>
+    -->
+  </Prehled-predanych>
+  <Rizeni-prehledu>
+    <Priznak-generovani>generovat</Priznak-generovani>
+    <Radek-od>1</Radek-od>
+    <Radek-do>1000</Radek-do>
+    <Priznak-zachovani>zachovat</Priznak-zachovani>
+  </Rizeni-prehledu>
+</Xrg>
