@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 namespace InspisPipe.InspisWS
 {
     [ServiceBehavior(AddressFilterMode = AddressFilterMode.Any)]
-    public class Events : BaseSvc
+    public class Events : BaseSvc, IEvents
     {
         public string Ping()
         {            
@@ -37,6 +37,43 @@ namespace InspisPipe.InspisWS
             string s = this.GetApiPlainResult($"Lists/a10EventType");
             return JsonConvert.DeserializeObject<IEnumerable<a10EventType>>(s);
 
+        }
+
+        public a11EventForm GetEventForm(string HashIsKey, int a11ID)
+        {
+            return null;
+        }
+        public Result SaveCommentOnly(string HashIsKey, int a01ID, string comment)
+        {
+            return null;
+        }
+        public IEnumerable<a01Event> GetList(string HashIsKey, int b02ID, int a10ID, int a08ID, int a03ID, int j70ID, string a03REDIZO)
+        {
+            return null;
+        }
+        public Result Create(int a10ID, int a08ID, int[] f06IDs)
+        {
+            return null;
+        }
+        public Result CreateInline(string HashIsKey, int a10ID, int a08ID, string REDIZO, string IZO, int[] f06IDs)
+        {
+            return null;
+        }
+        public a01Event GetBySignature(string HashIsKey, string signature)
+        {
+            return null;
+        }
+        public a01Event Get(string HashIsKey, int a01ID)
+        {
+            return null;
+        }
+        public IEnumerable<b06WorkflowStep> GetAvailableWorkflowSteps(int b02ID)
+        {
+            return null;
+        }
+        public Result RunWorkflowStep(string HashIsKey, int a01ID, int b06ID, string comment)
+        {
+            return null;
         }
     }
 }
