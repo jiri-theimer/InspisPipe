@@ -227,49 +227,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="InspisWS\BaseSvc.cs" />
-    <Compile Include="InspisWS\Events.svc.cs">
-      <DependentUpon>Events.svc</DependentUpon>
-    </Compile>
-    <Compile Include="InspisWS\ILists.cs" />
-    <Compile Include="InspisWS\Interfaces\IEvents.cs" />
-    <Compile Include="InspisWS\Interfaces\IForms.cs" />
-    <Compile Include="InspisWS\Interfaces\ILists.cs" />
-    <Compile Include="InspisWS\Interfaces\IPragodata.cs" />
-    <Compile Include="InspisWS\Interfaces\IService.cs" />
-    <Compile Include="InspisWS\Interfaces\IUploads.cs" />
-    <Compile Include="InspisWS\Lists.svc.cs">
-      <DependentUpon>Lists.svc</DependentUpon>
-    </Compile>
-    <Compile Include="InspisWS\Models\a01Event.cs" />
-    <Compile Include="InspisWS\Models\a03Institution.cs" />
-    <Compile Include="InspisWS\Models\a04Inspectorate.cs" />
-    <Compile Include="InspisWS\Models\a05Region.cs" />
-    <Compile Include="InspisWS\Models\a09FounderType.cs" />
-    <Compile Include="InspisWS\Models\a10EventType.cs" />
-    <Compile Include="InspisWS\Models\a11EventForm.cs" />
-    <Compile Include="InspisWS\Models\a21InstitutionLegalType.cs" />
-    <Compile Include="InspisWS\Models\a39InstitutionPerson.cs" />
-    <Compile Include="InspisWS\Models\b06WorkflowStep.cs" />
-    <Compile Include="InspisWS\Models\BinaryAttachment.cs" />
-    <Compile Include="InspisWS\Models\f06Form.cs" />
-    <Compile Include="InspisWS\Models\f18FormSegment.cs" />
-    <Compile Include="InspisWS\Models\f19Question.cs" />
-    <Compile Include="InspisWS\Models\f21ReplyUnit.cs" />
-    <Compile Include="InspisWS\Models\f32FilledValue.cs" />
-    <Compile Include="InspisWS\Models\j04UserRole.cs" />
-    <Compile Include="InspisWS\Models\PersonProfile.cs" />
-    <Compile Include="InspisWS\Models\PersonProfileISet.cs" />
-    <Compile Include="InspisWS\Models\PragoDataTask.cs" />
-    <Compile Include="InspisWS\Models\Result.cs" />
-    <Compile Include="InspisWS\Models\Result_Attachments.cs" />
-    <Compile Include="InspisWS\Models\Result_f06Form.cs" />
-    <Compile Include="InspisWS\Models\Result_f18FormSegment.cs" />
-    <Compile Include="InspisWS\Models\Result_f19Question.cs" />
-    <Compile Include="InspisWS\Models\Result_f21ReplyUnit.cs" />
-    <Compile Include="InspisWS\Models\Result_f32FilledValue.cs" />
-    <Compile Include="InspisWS\Models\Result_GetForm.cs" />
-    <Compile Include="InspisWS\Models\Result_PragoDataTask.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\CreateUserConfirmViewModel.cs" />
     <Compile Include="Models\CreateUserViewModel.cs" />
@@ -691,8 +648,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="Connected Services\GIN1\Ssl.wsdl" />
-    <Content Include="InspisWS\Events.svc" />
-    <Content Include="InspisWS\Lists.svc" />
     <Content Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
     <None Include="Connected Services\GIN2\Gin.wsdl" />
     <Content Include="Scripts\modernizr-2.8.3.js" />

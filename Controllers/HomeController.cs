@@ -17,12 +17,12 @@ namespace InspisPipe.Controllers
         {
             ViewBag.Title = "Home Page";
 
-            var client = new InspisPipe.InspisWS.Events();
+            //var client = new InspisPipe.InspisWS.Events();
 
             //ViewBag.testapi = client.LoadLinkerSignature("Ag44wNQL34Aj/2FVjcdynQ==", 772846);
             //ViewBag.testapi = client.GetListEventForm("Ag44wNQL34Aj/2FVjcdynQ==",2069735, 772846,38045);
-            var lis = client.a10EventType();
-            ViewBag.testapi = lis.First().PID.ToString() + ": " + lis.First().a10Name + ", počet: " + lis.Count().ToString();
+            //var lis = client.a10EventType();
+            //ViewBag.testapi = lis.First().PID.ToString() + ": " + lis.First().a10Name + ", počet: " + lis.Count().ToString();
 
             //pokusapi_post();
 
