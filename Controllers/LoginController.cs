@@ -38,6 +38,9 @@ namespace InspisPipe.Controllers
             var capi = new _ValidateUserController();
             if (capi.Get("cesta-na-přímo-bez-klíče!", v.UserName, v.Password))
             {
+                var recJ03 = bas.LoadJ03ByLogin(v.UserName);
+                Write2Accesslog(v, recJ03.j03ID, null);
+
                 if (string.IsNullOrEmpty(v.SourceUrl))
                 {
                     FormsAuthentication.RedirectFromLoginPage(v.UserName, true);
@@ -52,6 +55,7 @@ namespace InspisPipe.Controllers
             }
             else
             {
+               Write2Accesslog(v, 0, "Špatné přihlašovací jméno nebo heslo!");
                 v.ShowErrorMessasge("Špatné přihlašovací jméno nebo heslo!");
             }
             
@@ -82,6 +86,40 @@ namespace InspisPipe.Controllers
 
 
             return null;
+        }
+
+
+        private void Write2Accesslog(LoginViewModel v,int intJ03ID,string strMessage)
+        {
+            var c = new j90LoginAccessLog() { j90ClientBrowser = v.Browser_UserAgent, j90BrowserAvailWidth = v.Browser_AvailWidth, j90BrowserAvailHeight = v.Browser_AvailHeight, j90BrowserInnerWidth = v.Browser_InnerWidth, j90BrowserInnerHeight = v.Browser_InnerHeight };
+           
+            var uaParser = UAParser.Parser.GetDefault();
+            UAParser.ClientInfo client_info = uaParser.Parse(v.Browser_UserAgent);
+            c.j90BrowserOS = client_info.OS.Family + " " + client_info.OS.Major;
+            c.j90BrowserFamily = client_info.UA.Family + " " + client_info.UA.Major;
+            c.j90BrowserDeviceFamily = client_info.Device.Family;
+            c.j90BrowserDeviceType = v.Browser_DeviceType;
+            c.j90LoginMessage = strMessage;
+            c.j90LoginName = v.UserName;
+            
+            if (intJ03ID == 0)
+            {
+                c.j03ID = null;
+            }
+            else
+            {
+                c.j03ID = intJ03ID;
+            }
+            
+
+            c.j90LocationHost = v.Browser_Host;
+            c.j90AppClient = "PIPE";
+            
+            
+
+            var db = new DbHandler(DbEnum.PrimaryDb);
+            db.RunSql("INSERT INTO j90LoginAccessLog(j03ID,j90Date,j90LoginName,j90ClientBrowser,j90BrowserAvailWidth,j90BrowserAvailHeight,j90BrowserInnerWidth,j90BrowserInnerHeight,j90LoginMessage,j90LocationHost,j90AppClient,j90BrowserOS,j90BrowserFamily,j90BrowserDeviceFamily) VALUES(@j03ID,GETDATE(),@j90LoginName,@j90ClientBrowser,@j90BrowserAvailWidth,@j90BrowserAvailHeight,@j90BrowserInnerWidth,@j90BrowserInnerHeight,@j90LoginMessage,@j90LocationHost,@j90AppClient,@j90BrowserOS,@j90BrowserFamily,@j90BrowserDeviceFamily)", new {j03ID= c.j03ID, j90LoginName=c.j90LoginName, j90ClientBrowser =c.j90ClientBrowser, j90BrowserAvailWidth=c.j90BrowserAvailWidth, j90BrowserAvailHeight=c.j90BrowserAvailHeight, j90BrowserInnerWidth=c.j90BrowserInnerWidth, j90BrowserInnerHeight=c.j90BrowserInnerHeight, j90LoginMessage=c.j90LoginMessage, j90LocationHost=c.j90LocationHost, j90AppClient=c.j90AppClient, j90BrowserOS=c.j90BrowserOS, j90BrowserFamily=c.j90BrowserFamily, j90BrowserDeviceFamily = c.j90BrowserDeviceFamily });
+            
         }
 
 

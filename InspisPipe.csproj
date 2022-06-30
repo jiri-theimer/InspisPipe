@@ -121,6 +121,9 @@
       <Private>True</Private>
       <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="UAParser, Version=3.1.47.0, Culture=neutral, PublicKeyToken=f7377bf021646069, processorArchitecture=MSIL">
+      <HintPath>packages\UAParser.3.1.47\lib\net45\UAParser.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -232,6 +235,7 @@
     <Compile Include="Models\CreateUserViewModel.cs" />
     <Compile Include="Models\j02Person.cs" />
     <Compile Include="Models\j03User.cs" />
+    <Compile Include="Models\j90LoginAccessLog.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\MergeDocRegion.cs" />
     <Compile Include="Models\MyMainButton.cs" />
