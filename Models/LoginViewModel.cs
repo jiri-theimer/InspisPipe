@@ -11,7 +11,7 @@ namespace InspisPipe.Models
         public string Password { get; set; }
         public string SourceUrl { get; set; }
 
-
+        public string SourceUserName { get; set; }  //pro případ LogAsUser
         public string Browser_UserAgent { get; set; }
         public int Browser_AvailWidth { get; set; }
         public int Browser_AvailHeight { get; set; }

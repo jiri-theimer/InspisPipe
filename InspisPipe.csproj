@@ -680,6 +680,7 @@
     <Content Include="Views\Password\ConfirmRecovery.cshtml" />
     <Content Include="Views\CreateUser\Index.cshtml" />
     <Content Include="Views\CreateUser\Confirm.cshtml" />
+    <Content Include="Views\Login\BorrowAnIdentity.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

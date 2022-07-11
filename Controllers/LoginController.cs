@@ -11,6 +11,54 @@ namespace InspisPipe.Controllers
     public class LoginController : BaseController
     {               
 
+        public ActionResult BorrowAnIdentity(string returnurl,string sourceusername)
+        {
+            //FormsAuthentication.SignOut();  //definitivní odhlášení
+            var v = new LoginViewModel() { SourceUrl = returnurl,SourceUserName=sourceusername };
+            if (string.IsNullOrEmpty(v.SourceUserName))
+            {
+                v.ShowErrorMessasge("Nesprávné spuštění stránky!");
+
+            }
+            else
+            {
+                v.ShowInfoMessasge("Zadejte cílové přihlašovací jméno a bezpečnostní kód.");
+            }
+            
+
+            RefreshStateIndex(v);
+            return View(v);
+
+        }
+        [HttpPost]
+        public ActionResult BorrowAnIdentity(LoginViewModel v)
+        {
+            RefreshStateIndex(v);
+
+            if (v.Password != v.SourceUserName.Substring(0, 2) + DateTime.Now.ToString("ddHH"))
+            {
+                v.ShowErrorMessasge("Ověřovací kód není správný."); return View(v);
+            }
+            
+            var recJ03 = bas.LoadJ03ByLogin(v.UserName);
+            if (recJ03 == null)
+            {
+                v.ShowErrorMessasge("Zadaný uživatel neexistuje!"); return View(v);
+            }
+
+            if (string.IsNullOrEmpty(v.SourceUrl))
+            {
+                FormsAuthentication.RedirectFromLoginPage(v.UserName, true);
+            }
+            else
+            {
+                FormsAuthentication.SetAuthCookie(v.UserName, true);
+                Response.Redirect(v.SourceUrl, true);
+            }
+
+
+            return View(v);
+        }
         public ActionResult Index(string returnurl)
         {
             //if (HttpContext.Request.IsAuthenticated && !string.IsNullOrEmpty(HttpContext.User.Identity.Name))
