@@ -117,7 +117,7 @@ namespace InspisPipe.Controllers
             v.AddMainButton("InspIS PORTÁL", basConfig.Url_PORTAL, "Portál informací o školách");
             v.AddMainButton("InspIS E-LEARNING", basConfig.Url_ELEARNING, "Platforma pro vzdělávání");
             v.AddMainButton("Zapomenuté heslo", Url.Action("Recovery", "Password"));
-            v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "Createuser"));
+            //v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "Createuser")); //v ČSI nechtějí nakonec nechtějí tento odkaz
             
             
 
