@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>InspisPipe</RootNamespace>
     <AssemblyName>InspisPipe</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,19 +56,19 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.DirectoryServices.AccountManagement" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Channels" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Services" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
@@ -121,6 +122,7 @@
       <Private>True</Private>
       <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="UAParser, Version=3.1.47.0, Culture=neutral, PublicKeyToken=f7377bf021646069, processorArchitecture=MSIL">
       <HintPath>packages\UAParser.3.1.47\lib\net45\UAParser.dll</HintPath>
     </Reference>
@@ -203,6 +205,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MergeDocController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
+    <Compile Include="Controllers\Print2PdfController.cs" />
     <Compile Include="Controllers\SsoController.cs" />
     <Compile Include="Controllers\_ChangeLoginController.cs" />
     <Compile Include="Controllers\_DecryptMembershipCookieController.cs" />
@@ -693,6 +696,7 @@
     <Folder Include="Views\MembershipCreateUser\" />
     <Folder Include="Views\NahratSouborDoGinis\" />
     <Folder Include="Views\NovyDokument\" />
+    <Folder Include="Views\Print2Pdf\" />
     <Folder Include="Views\SeznamDokumentuSpisu\" />
     <Folder Include="Views\SeznamDokumentu\" />
     <Folder Include="Views\SeznamSouboru\" />
@@ -716,6 +720,12 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\GIN1\" />
     <WCFMetadataStorage Include="Connected Services\GIN2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="VB\VB.vbproj">
+      <Project>{db00acf9-d386-4e8d-9762-44ab2eea47cc}</Project>
+      <Name>VB</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

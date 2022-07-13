@@ -27,6 +27,17 @@ namespace InspisPipe.Controllers
             //pokusapi_post();
 
 
+            //var xx = new VB.ExportDocToPDF();
+            //var b=xx.DoExport("c:\\temp\\iz1.docx", "c:\\temp\\iz1.pdf", "profile002.ini");
+            //if (!b)
+            //{
+            //    Response.Write(xx.GetError());
+            //}
+
+
+
+
+
             return View();
         }
 

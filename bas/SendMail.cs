@@ -45,8 +45,8 @@ public class SendMail
         {
             client.Credentials = new System.Net.NetworkCredential(login, pwd);
 
-            m.BodyEncoding = Encoding.UTF8;
-            m.SubjectEncoding = Encoding.UTF8;
+            m.BodyEncoding = System.Text.Encoding.UTF8;
+            m.SubjectEncoding = System.Text.Encoding.UTF8;
             m.Headers.Add("Message-ID", this.MessageGuid);
             m.IsBodyHtml = this.IsBodyHtml;
 
