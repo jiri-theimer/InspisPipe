@@ -9,11 +9,11 @@ namespace InspisPipe.Controllers
     public class Print2PdfController : InspisPipe.Controllers.BaseApiController
     {
         // GET: Print2Pdf
-        public bool Get(string strSourceDocFile, string strDestPdfFile)
+        public bool Get(string sourcedocpath, string destpdfpath)
         {
 
             var xx = new VB.ExportDocToPDF();
-            return xx.DoExport(strSourceDocFile, strDestPdfFile, "profile002.ini");
+            return xx.DoExport(sourcedocpath, destpdfpath, "profile002.ini");
             
         }
     }
