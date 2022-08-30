@@ -37,7 +37,7 @@ body {
 
     #divWrapperBody {
         margin: 0px;
-        
+        width: 100%;
     }
 
     #divWrapperContent {
@@ -147,6 +147,28 @@ body {
 
 a.mainbutton {
     width: 100%;
-    min-height:50px;
+    min-height: 50px;
+    
     margin-bottom: 15px;
+    background-color: #1B75BB;
+    text-align:left;
+    color:white;
+}
+
+
+
+@media only screen and (max-width: 2599px) {
+
+    .login_nadpis_prihlaseni
+    {
+        margin-top: 120px;
+        color: #1B8AD1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .login_nadpis_prihlaseni {        
+        color: #1B8AD1;
+    }
 }

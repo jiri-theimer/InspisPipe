@@ -10,9 +10,9 @@
 
 
 
-<h3>
+<h4 class="login_nadpis_prihlaseni">
     Přihlášení do systému
-</h3>
+</h4>
 <form id="form1" asp-controller="Login" asp-action="Index" method="POST">
     @Html.HiddenFor(model => model.SourceUrl)
     <div class="row">
@@ -24,7 +24,7 @@
             @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
         </div>
     </div>
-    <div class="row" style="margin-top:10px;">
+    <div class="row my-2">
         <div class="col-sm-2 col-md-3">
             Heslo:
         </div>
@@ -32,9 +32,16 @@
             @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
         </div>
     </div>
+    <div class="row my-2">
+        <div class="col-sm-2 col-md-3">
 
+        </div>
+        <div class="col-sm-3 col-md-4">
+            <button type="submit" id="cmdSubmit" class="btn btn-primary">Přihlásit se</button>
+        </div>
+    </div>
 
-    <button type="submit" id="cmdSubmit" class="btn btn-primary">Přihlásit se</button>
+    
 
     @Html.HiddenFor(model => model.Browser_AvailWidth)
     @Html.HiddenFor(model => model.Browser_AvailHeight)

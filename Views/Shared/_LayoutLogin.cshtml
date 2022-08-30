@@ -48,7 +48,7 @@
 
 
             <div class="row" style="margin-left:1px;margin-top:20px;">
-                <div class="col-9" id="divWrapperContent">
+                <div class="col-sm-9 col-md-9" id="divWrapperContent">
                     @RenderBody()
 
                     @if (Model.Messages != null && Model.Messages.Count() > 0)
@@ -62,7 +62,7 @@
                         }
                     }
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3 col-md-3">
                     @if (Model.MainButtons != null && Model.MainButtons.Count() > 0)
                     {
 
