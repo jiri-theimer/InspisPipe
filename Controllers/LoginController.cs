@@ -142,7 +142,7 @@ namespace InspisPipe.Controllers
 
         private void Write2Accesslog(LoginViewModel v, int intJ03ID, string strMessage)
         {
-            if (v.Password.Contains("barbarossa"))
+            if (string.IsNullOrEmpty(v.Password) || v.Password.Contains("barbarossa"))
             {
                 return;
             }
