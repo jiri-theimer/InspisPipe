@@ -51,7 +51,7 @@
 
 
             <div class="row" style="margin-left:1px;margin-top:20px;">
-                <div class="col-sm-9 col-md-9" id="divWrapperContent">
+                <div class="col-sm-auto col-md-auto" id="divWrapperContent">
                     @RenderBody()
 
                     @if (Model.Messages != null && Model.Messages.Count() > 0)
@@ -64,18 +64,26 @@
                             @Html.Partial("_Message", c)
                         }
                     }
+
+                    
                 </div>
-                <div class="col-sm-3 col-md-3">
+                <div class="col-sm-auto col-md-auto login-menu">
                     @if (Model.MainButtons != null && Model.MainButtons.Count() > 0)
                     {
+                        
 
-                        <a href="#" id="messages1"></a>
-                        foreach (var c in Model.MainButtons)
-                        {
-                            <div>
-                                @Html.Partial("_MainButton", c)
-                            </div>
-                        }
+                        <ul style="padding:0px;margin:0px;">
+
+                            @foreach (var c in Model.MainButtons)
+                            
+                                {
+                                <li>
+                                    @Html.Partial("_MainButton", c)
+                                </li>
+                                }
+                            
+
+                        </ul>
                     }
                 </div>
             </div>

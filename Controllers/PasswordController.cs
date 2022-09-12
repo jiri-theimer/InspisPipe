@@ -15,9 +15,9 @@ namespace InspisPipe.Controllers
         {
             var v = new BaseViewModel();
             v.AddMainButton("Přihlášení do systému", Url.Action("Index", "Login"));
-            v.AddMainButton("Spuštění testu",basConfig.Url_SET + "/Login.aspx?Type=PasswordReset", "Certifikované a školní testování");
-            v.AddMainButton("Výsledky testu",basConfig.Url_SET + "/Vysledky/Default.aspx", "Certifikované a školní testování");
-            v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "CreateUser"));
+            v.AddMainButton("Spuštění testu",basConfig.Url_SET + "/Login.aspx?Type=PasswordReset", "Certifikované a školní testování",true);
+            v.AddMainButton("Výsledky testu",basConfig.Url_SET + "/Vysledky/Default.aspx", "Certifikované a školní testování",true);
+            v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "CreateUser",true));
 
             if (string.IsNullOrEmpty(guid))
             {
@@ -134,10 +134,10 @@ namespace InspisPipe.Controllers
 
         private void RefreshStateRecovery(PasswordRecoveryViewModel v)
         {
-            v.AddMainButton("Přihlášení do systému",Url.Action("Index","Login"),"InspIS DATA");
-            v.AddMainButton("Spuštění testu",basConfig.Url_SET + "/Login.aspx?Type=PasswordReset", "Certifikované a školní testování");
-            v.AddMainButton("Výsledky testu",basConfig.Url_SET + "/Vysledky/Default.aspx", "Certifikované a školní testování");
-            v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "CreateUser"));
+            v.AddMainButton("Přihlášení do systému",Url.Action("Index","Login"),"InspIS DATA",true);
+            v.AddMainButton("Spuštění testu",basConfig.Url_SET + "/Login.aspx?Type=PasswordReset", "Certifikované a školní testování",true);
+            v.AddMainButton("Výsledky testu",basConfig.Url_SET + "/Vysledky/Default.aspx", "Certifikované a školní testování",true);
+            v.AddMainButton("Vytvořit nový účet", Url.Action("Index", "CreateUser"),null,true);
         }
 
         private string GetPwdRecoveryMessage(j03User recJ03, string guid)

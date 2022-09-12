@@ -101,11 +101,11 @@ namespace InspisPipe.Controllers
 
         private void RefreshStateIndex(CreateUserViewModel v)
         {
-            v.AddMainButton("Přihlášení do systému",Url.Action("Index","Login"), "InspIS DATA");
+            v.AddMainButton("Přihlášení do systému",Url.Action("Index","Login"), "InspIS DATA",true);
             v.AddMainButton("InspIS SET", basConfig.Url_SET, "Systém elektronického testování");
             v.AddMainButton("InspIS PORTÁL", basConfig.Url_PORTAL, "Portál informací o školách");
 
-            v.AddMainButton("Zapomenuté heslo", Url.Action("Recovery", "Password"));
+            v.AddMainButton("Zapomenuté heslo", Url.Action("Recovery", "Password"),null,true);
 
             v.captcha = new CaptchaSupport();
 

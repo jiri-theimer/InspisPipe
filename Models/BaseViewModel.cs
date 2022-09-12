@@ -32,9 +32,13 @@ namespace InspisPipe.Models
             
         }
 
-        public void AddMainButton(string maintext,string url,string additionaltext=null)
+        public void AddMainButton(string maintext,string url,string additionaltext=null,bool bolUpperCase=false)
         {
             if (this.MainButtons == null) this.MainButtons = new List<MyMainButton>();
+            if (bolUpperCase)
+            {
+                maintext = maintext.ToUpper();
+            }
             this.MainButtons.Add(new MyMainButton() { MainText = maintext, Url = url,AddText=additionaltext });
         }
     }

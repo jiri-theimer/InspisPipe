@@ -1,13 +1,17 @@
-﻿html {
+﻿
+
+html, body, form {
     font-size: small;
+    margin: 0px !important;
+    padding: 0px;
 }
 
 body {
-    margin: 0px;
     font-family: Arial, "Helvetica Neue", "Lucida Grande", "Segoe UI", Helvetica, Verdana, sans-serif;
     background-image: url('Images/login_pozadi.png');
     background-repeat: repeat;
-    background-color: #e9e9e9;
+    background-color: lightsteelblue;
+    font-size: small;
 }
 
 
@@ -35,8 +39,8 @@ body {
 }
 
 #divWrapperContent {
-    min-height: 400px;
-    
+    min-height: 500px;
+    width:658px;
     margin-bottom: 20px;
     border:solid 1px lightgrey;
     padding: 10px;
@@ -156,15 +160,7 @@ body {
     }
 
 
-a.mainbutton {
-    width: 100%;
-    min-height: 50px;
-    
-    margin-bottom: 15px;
-    background-color: #1B75BB;
-    text-align:left;
-    color:white;
-}
+
 
 
 
@@ -183,3 +179,70 @@ a.mainbutton {
         color: #1B8AD1;
     }
 }
+
+
+
+
+
+.login-menu {
+    margin-top: 0px;
+    margin-right: 0px;
+    min-height: 400px;
+    width:270px !important;
+    /*border: 2px solid #A0C1DB;*/
+}
+
+    .login-menu ul {
+        display: inline;
+        list-style-type: disc;
+        /*margin-top: 20px !important;*/
+        margin: 0px !important;
+    }
+
+    .login-menu li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+        box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.6);
+        border-collapse: separate;
+        list-style: none;
+        display: list-item;
+    }
+
+    .login-menu a {
+        height: 80px;
+        display: block;
+        padding: 17px 30px 30px 20px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: -webkit-match-parent;
+        line-height: 120% !important;
+        font-weight: 600 !important;
+        border: 1px solid #2d4152;
+        /*text-transform: uppercase;*/
+        background: no-repeat 125px 63px #1b75bb;
+    }
+
+    
+
+    .login-menu .hint {
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    .login-menu a:hover {
+        background-color: #2d4152;
+        -webkit-transition: background-color 300ms linear;
+        -moz-transition: background-color 300ms linear;
+        -o-transition: background-color 300ms linear;
+        -ms-transition: background-color 300ms linear;
+        transition: background-color 300ms linear;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .login-menu a:focus {
+        color: #fff;
+        text-decoration: none;
+    }
