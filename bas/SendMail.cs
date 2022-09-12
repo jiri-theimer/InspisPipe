@@ -13,12 +13,15 @@ public class SendMail
     private List<Attachment> _attachments;
     public bool SendMessage(string strBody, string strSubject, string strTo)
     {
-        string smtpserver = "smtp.mycorecloud.net";
-        int port = 25;
-        bool enablessl = false;
-        string login = "smtp-marktime";
-        string emailaddress = "noreply@marktime.net";
-        string pwd = "Oomaidee3Ais";
+        var db = new DbHandler(DbEnum.PrimaryDb);
+        var recJ40 = db.Load<InspisPipe.Models.j40MailAccount>("select top 1 a.* FROM j40MailAccount a WHERE a.j40UsageFlag=2 AND GETDATE() BETWEEN a.j40ValidFrom AND a.j40ValidUntil ORDER BY a.j40Ordinary");
+
+        string smtpserver = recJ40.j40SmtpHost;
+        int port = recJ40.j40SmtpPort;
+        bool enablessl = recJ40.j40SmtpEnableSsl;
+        string login = recJ40.j40SmtpLogin;
+        string emailaddress = recJ40.j40SmtpEmail;
+        string pwd = recJ40.j40SmtpPassword;
         if (string.IsNullOrEmpty(this.MessageGuid))
         {
             this.MessageGuid = bas.GetGuid();

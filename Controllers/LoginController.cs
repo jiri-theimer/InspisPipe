@@ -83,6 +83,12 @@ namespace InspisPipe.Controllers
         public ActionResult Index(LoginViewModel v)
         {
             RefreshStateIndex(v);
+            if (string.IsNullOrEmpty(v.Password) || string.IsNullOrEmpty(v.UserName))
+            {
+                Write2Accesslog(v, 0, "Špatné přihlašovací jméno nebo heslo!");
+                v.ShowErrorMessasge("Špatné přihlašovací jméno nebo heslo!");
+                return View(v);
+            }
             var capi = new _ValidateUserController();
             if (capi.Get("cesta-na-přímo-bez-klíče!", v.UserName, v.Password))
             {
