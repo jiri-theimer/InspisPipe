@@ -92,7 +92,7 @@ public class basMemberShip
     public static string GetRandomPassword()
     {
         Random rnd = new Random();
-        string znak = "!+_-}{[]#.";
+        string znak = "!._)}{[](.";
         return rnd.Next(100, 1000).ToString().Substring(0, 2) + znak.Substring(rnd.Next(0, 9), 1) + bas.GetGuid().Substring(0, 6);
     }
     public static bool ValidatBeforeCreate(string strLogin, string strPassword, string strVerify)

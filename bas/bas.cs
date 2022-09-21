@@ -51,7 +51,7 @@ public class bas
         {
             throw new Exception("Na vstupu chybí apikey.");
         }
-        if (apikey == "cesta-na-přímo-bez-klíče!")
+        if (apikey == "cesta-na-přímo-bez-klíče!" || apikey== "cesta-na-primo-bez-klice!")
         {
             return true;
         }
