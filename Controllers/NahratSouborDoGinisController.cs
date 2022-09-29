@@ -12,9 +12,14 @@ namespace InspisPipe.Controllers
         // GET: NahratSouborDoGinis
         public string Get(string login,string pid,string tempfilename,string typvazby, string popissouboru)
         {
+            bas.LogInfo("Před InhaleLogin | typvazby: " + typvazby + ", popissouboru: " + popissouboru + ", pid: " + pid + ", login: " + login);
+
+
             this.InhaleLogin(login);
 
             string tempfullpath = @ConfigurationManager.AppSettings["TempFolder"] + "\\" + tempfilename;
+
+            bas.LogInfo("tempfullpath: " + tempfullpath+ ", typvazby: "+ typvazby+ ", popissouboru: "+ popissouboru+ ", pid: "+ pid+ ", login: "+ login);
 
             return _gin.NahratSouborDoGinis(pid, tempfullpath, typvazby, popissouboru);
 

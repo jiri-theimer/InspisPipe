@@ -13,6 +13,13 @@ public static class basConfig
             return @ConfigurationManager.AppSettings["TempFolder"];
         }
     }
+    public static string LogsFolder
+    {
+        get
+        {
+            return @ConfigurationManager.AppSettings["LogsFolder"];
+        }
+    }
     public static string Url_PIPE
     {
         get

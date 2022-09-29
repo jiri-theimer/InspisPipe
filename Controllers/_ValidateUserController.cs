@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Web;
 using System.Web.Mvc;
 
@@ -11,6 +12,7 @@ namespace InspisPipe.Controllers
     {
         public bool Get(string apikey, string login, string password)
         {
+            
             if (string.IsNullOrEmpty(login))
             {
                 return false;

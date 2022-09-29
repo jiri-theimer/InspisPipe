@@ -163,10 +163,9 @@ public class bas
     }
     private static void Handle_Log_Write(string logname, string message, string username = null, string procname = null)
     {
+
         
-        var strLogDir = basConfig.TempFolder + "\\Logs";
-        
-        var strPath = string.Format("{0}\\log-{1}-{2}-{3}.log", strLogDir, logname, username, DateTime.Now.ToString("yyyy.MM.dd"));
+        var strPath = string.Format("{0}\\log-{1}-{2}-{3}.log", basConfig.LogsFolder, logname, username, DateTime.Now.ToString("yyyy.MM.dd"));
         try
         {
             System.IO.File.AppendAllLines(strPath, new List<string>() { "", "", "------------------------------", DateTime.Now.ToString() });
