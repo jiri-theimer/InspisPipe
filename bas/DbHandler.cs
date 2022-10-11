@@ -163,5 +163,44 @@ public class DbHandler
 
     }
 
+
+    public IEnumerable<T> GetList<T>(string strSQL)
+    {
+        _lastError = null;
+        using (SqlConnection con = new SqlConnection(_conString))
+        {
+            try
+            {
+               
+                return con.Query<T>(strSQL);
+            }
+            catch (Exception e)
+            {
+                log_error(e, strSQL);
+                return null;
+            }
+
+
+        }
+    }
+    public IEnumerable<T> GetList<T>(string strSQL, object param)
+    {
+        _lastError = null;
+        using (SqlConnection con = new SqlConnection(_conString))
+        {
+            try
+            {
+               
+                return con.Query<T>(strSQL, param);
+            }
+            catch (Exception e)
+            {
+                log_error(e, strSQL, param);
+                return null;
+            }
+
+        }
+    }
+
 }
 

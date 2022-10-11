@@ -68,6 +68,9 @@ namespace InspisPipe.Controllers
             //    db.RunSql($"UPDATE p85TempBox SET p85ValidUntil=GETDATE() WHERE p85ValidUntil>GETDATE() AND p85Prefix='sso2core' AND p85UserInsert LIKE '{HttpContext.User.Identity.Name}'");
 
             //}
+            var xx = new Set_ExportA37ToT59Controller();
+            string vysledek=xx.Get(2);
+
 
 
             FormsAuthentication.SignOut();  //definitivní odhlášení
@@ -81,7 +84,9 @@ namespace InspisPipe.Controllers
 
         [HttpPost]
         public ActionResult Index(LoginViewModel v)
-        {            
+        {
+            
+
             RefreshStateIndex(v);
             if (string.IsNullOrEmpty(v.Password) || string.IsNullOrEmpty(v.UserName))
             {

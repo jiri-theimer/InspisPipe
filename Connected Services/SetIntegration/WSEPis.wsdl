@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="WSEPis" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IWSEPis_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" />
+      <xsd:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWSEPis_GetCampaignResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampaignResults" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetCampaignResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCampaignResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetFinishedCampaigns_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFinishedCampaigns" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetFinishedCampaigns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFinishedCampaignsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetOpenedCampaigns_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenedCampaigns" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetOpenedCampaigns_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenedCampaignsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetAllCampaignsForSchool_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCampaignsForSchool" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetAllCampaignsForSchool_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCampaignsForSchoolResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetRegisteredSchoolsRedizo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisteredSchoolsRedizo" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_GetRegisteredSchoolsRedizo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisteredSchoolsRedizoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_RegisterSchoolToCampaign_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterSchoolToCampaign" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_RegisterSchoolToCampaign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterSchoolToCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeSchools_InputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeSchools" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeSchools_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeSchoolsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeSchoolFounders_InputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeSchoolFounders" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeSchoolFounders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeSchoolFoundersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeSchoolIZO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeSchoolIZO" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeSchoolIZO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeSchoolIZOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeFields" />
+  </wsdl:message>
+  <wsdl:message name="IWSEPis_SynchronizeFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SynchronizeFieldsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWSEPis">
+    <wsdl:operation name="GetCampaignResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/GetCampaignResults" message="tns:IWSEPis_GetCampaignResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/GetCampaignResultsResponse" message="tns:IWSEPis_GetCampaignResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedCampaigns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/GetFinishedCampaigns" message="tns:IWSEPis_GetFinishedCampaigns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/GetFinishedCampaignsResponse" message="tns:IWSEPis_GetFinishedCampaigns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenedCampaigns">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/GetOpenedCampaigns" message="tns:IWSEPis_GetOpenedCampaigns_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/GetOpenedCampaignsResponse" message="tns:IWSEPis_GetOpenedCampaigns_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCampaignsForSchool">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/GetAllCampaignsForSchool" message="tns:IWSEPis_GetAllCampaignsForSchool_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/GetAllCampaignsForSchoolResponse" message="tns:IWSEPis_GetAllCampaignsForSchool_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisteredSchoolsRedizo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/GetRegisteredSchoolsRedizo" message="tns:IWSEPis_GetRegisteredSchoolsRedizo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/GetRegisteredSchoolsRedizoResponse" message="tns:IWSEPis_GetRegisteredSchoolsRedizo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterSchoolToCampaign">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/RegisterSchoolToCampaign" message="tns:IWSEPis_RegisterSchoolToCampaign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/RegisterSchoolToCampaignResponse" message="tns:IWSEPis_RegisterSchoolToCampaign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchools">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeSchools" message="tns:IWSEPis_SynchronizeSchools_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeSchoolsResponse" message="tns:IWSEPis_SynchronizeSchools_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchoolFounders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeSchoolFounders" message="tns:IWSEPis_SynchronizeSchoolFounders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeSchoolFoundersResponse" message="tns:IWSEPis_SynchronizeSchoolFounders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchoolIZO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeSchoolIZO" message="tns:IWSEPis_SynchronizeSchoolIZO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeSchoolIZOResponse" message="tns:IWSEPis_SynchronizeSchoolIZO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeFields">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeFields" message="tns:IWSEPis_SynchronizeFields_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSEPis/SynchronizeFieldsResponse" message="tns:IWSEPis_SynchronizeFields_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IWSEPis" type="tns:IWSEPis">
+    <wsp:PolicyReference URI="#WSHttpBinding_IWSEPis_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCampaignResults">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/GetCampaignResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedCampaigns">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/GetFinishedCampaigns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenedCampaigns">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/GetOpenedCampaigns" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCampaignsForSchool">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/GetAllCampaignsForSchool" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisteredSchoolsRedizo">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/GetRegisteredSchoolsRedizo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterSchoolToCampaign">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/RegisterSchoolToCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchools">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeSchools" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchoolFounders">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeSchoolFounders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchoolIZO">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeSchoolIZO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeFields">
+      <soap12:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IWSEPis" type="tns:IWSEPis">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCampaignResults">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/GetCampaignResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedCampaigns">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/GetFinishedCampaigns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenedCampaigns">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/GetOpenedCampaigns" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCampaignsForSchool">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/GetAllCampaignsForSchool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisteredSchoolsRedizo">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/GetRegisteredSchoolsRedizo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterSchoolToCampaign">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/RegisterSchoolToCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchools">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeSchools" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchoolFounders">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeSchoolFounders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeSchoolIZO">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeSchoolIZO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchronizeFields">
+      <soap:operation soapAction="http://tempuri.org/IWSEPis/SynchronizeFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSEPis">
+    <wsdl:port name="WSHttpBinding_IWSEPis" binding="tns:WSHttpBinding_IWSEPis">
+      <soap12:address location="http://10.230.138.182:20104/WS/Epis" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://10.230.138.182:20104/WS/Epis</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IWSEPis" binding="tns:BasicHttpBinding_IWSEPis">
+      <soap:address location="http://10.230.138.182:20104/WS/Epis/basic" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

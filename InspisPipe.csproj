@@ -198,6 +198,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\SetIntegration\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CreateUserController.cs" />
@@ -206,6 +211,8 @@
     <Compile Include="Controllers\MergeDocController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\Print2PdfController.cs" />
+    <Compile Include="Controllers\Set_ExportA18ToT59Controller.cs" />
+    <Compile Include="Controllers\Set_ExportA37ToT59Controller.cs" />
     <Compile Include="Controllers\SsoController.cs" />
     <Compile Include="Controllers\_ChangeLoginController.cs" />
     <Compile Include="Controllers\_DecryptMembershipCookieController.cs" />
@@ -233,6 +240,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\a18DepartmentDomain.cs" />
+    <Compile Include="Models\a19DomainToInstitutionDepartment.cs" />
+    <Compile Include="Models\a37InstitutionDepartment.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\CreateUserConfirmViewModel.cs" />
     <Compile Include="Models\CreateUserViewModel.cs" />
@@ -634,6 +644,22 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\SetIntegration\Epis.disco" />
+    <None Include="Connected Services\SetIntegration\configuration91.svcinfo" />
+    <None Include="Connected Services\SetIntegration\configuration.svcinfo" />
+    <Content Include="Connected Services\SetIntegration\InspisPipe.SetIntegration.CampaignData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SetIntegration\InspisPipe.SetIntegration.SchoolResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SetIntegration\InspisPipe.SetIntegration.SynchronizeResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SetIntegration\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -713,6 +739,19 @@
     <Folder Include="Views\_ValidateUser\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\SetIntegration\Epis.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SetIntegration\Epis1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SetIntegration\Epis2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SetIntegration\Epis3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SetIntegration\WSEPis.wsdl" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -721,6 +760,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\GIN1\" />
     <WCFMetadataStorage Include="Connected Services\GIN2\" />
+    <WCFMetadataStorage Include="Connected Services\SetIntegration\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VB\VB.vbproj">

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfSchoolResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SchoolResult" nillable="true" type="tns:SchoolResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchoolResult" nillable="true" type="tns:ArrayOfSchoolResult" />
+  <xs:complexType name="SchoolResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Grade" type="xs:int" />
+      <xs:element minOccurs="0" name="Points" type="xs:int" />
+      <xs:element minOccurs="0" name="Rate" type="xs:int" />
+      <xs:element minOccurs="0" name="Redizo" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SchoolResult" nillable="true" type="tns:SchoolResult" />
+  <xs:complexType name="ArrayOfCampaignData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CampaignData" nillable="true" type="tns:CampaignData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCampaignData" nillable="true" type="tns:ArrayOfCampaignData" />
+  <xs:complexType name="CampaignData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CampaignId" type="xs:long" />
+      <xs:element minOccurs="0" name="CampaignType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CampaignData" nillable="true" type="tns:CampaignData" />
+  <xs:complexType name="ArrayOfSubjectInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubjectInfo" nillable="true" type="tns:SubjectInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubjectInfo" nillable="true" type="tns:ArrayOfSubjectInfo" />
+  <xs:complexType name="SubjectInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdrAdditionalChar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrAdditionalNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrBorough" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrCityPart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrDistrict" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrRegionUIV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrStreet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrStreetNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdrZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactPersonName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FounderRedizo" type="xs:int" />
+      <xs:element minOccurs="0" name="FounderTypeId" type="xs:long" />
+      <xs:element minOccurs="0" name="Ico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsClosed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Redizo" type="xs:int" />
+      <xs:element minOccurs="0" name="SubjectA03Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubjectInfo" nillable="true" type="tns:SubjectInfo" />
+  <xs:complexType name="SynchronizeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChangedCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NewCreatedCount" type="xs:int" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SynchronizeResult" nillable="true" type="tns:SynchronizeResult" />
+  <xs:complexType name="ArrayOfSchoolIzoDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SchoolIzoDefinition" nillable="true" type="tns:SchoolIzoDefinition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchoolIzoDefinition" nillable="true" type="tns:ArrayOfSchoolIzoDefinition" />
+  <xs:complexType name="SchoolIzoDefinition">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FieldIds" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="Izo" type="xs:int" />
+      <xs:element minOccurs="0" name="SubjectA03Id" type="xs:long" />
+      <xs:element minOccurs="0" name="SubjectA37Id" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SchoolIzoDefinition" nillable="true" type="tns:SchoolIzoDefinition" />
+  <xs:complexType name="ArrayOfFieldDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FieldDefinition" nillable="true" type="tns:FieldDefinition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFieldDefinition" nillable="true" type="tns:ArrayOfFieldDefinition" />
+  <xs:complexType name="FieldDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="A18Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsClosed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubCode1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubCode2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubCode3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubCode4" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FieldDefinition" nillable="true" type="tns:FieldDefinition" />
+</xs:schema>

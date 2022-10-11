@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="79d45572-ef07-411e-8cfe-13e60e91dbb8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.230.138.182:20104/WS/Epis" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Epis.xsd" MetadataType="Schema" ID="e73e7e2f-016d-435a-a146-f4ab750d6f3f" SourceId="1" SourceUrl="http://10.230.138.182:20104/WS/Epis?xsd=xsd1" />
+    <MetadataFile FileName="Epis.disco" MetadataType="Disco" ID="de7cf4f1-74de-442f-8ccd-2afc860b8be3" SourceId="1" SourceUrl="http://10.230.138.182:20104/WS/Epis?disco" />
+    <MetadataFile FileName="Epis1.xsd" MetadataType="Schema" ID="c5324255-8b4f-4ad2-ae77-884178880169" SourceId="1" SourceUrl="http://10.230.138.182:20104/WS/Epis?xsd=xsd3" />
+    <MetadataFile FileName="WSEPis.wsdl" MetadataType="Wsdl" ID="858a18b5-36ee-4898-a147-63ef9c57701d" SourceId="1" SourceUrl="http://10.230.138.182:20104/WS/Epis?wsdl" />
+    <MetadataFile FileName="Epis2.xsd" MetadataType="Schema" ID="8a4dbcfa-329b-4477-bd35-7d0f809f2b60" SourceId="1" SourceUrl="http://10.230.138.182:20104/WS/Epis?xsd=xsd0" />
+    <MetadataFile FileName="Epis3.xsd" MetadataType="Schema" ID="045b63a2-c3f4-4618-b4cf-aa456ecf2ba7" SourceId="1" SourceUrl="http://10.230.138.182:20104/WS/Epis?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

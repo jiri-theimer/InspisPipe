@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" />
+  <xs:import schemaLocation="http://10.230.138.182:20104/WS/Epis?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetCampaignResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="campaignId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampaignResultsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="GetCampaignResultsResult" nillable="true" type="q1:ArrayOfSchoolResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFinishedCampaigns">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFinishedCampaignsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="GetFinishedCampaignsResult" nillable="true" type="q2:ArrayOfCampaignData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOpenedCampaigns">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOpenedCampaignsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="GetOpenedCampaignsResult" nillable="true" type="q3:ArrayOfCampaignData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCampaignsForSchool">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="redizo" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCampaignsForSchoolResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="GetAllCampaignsForSchoolResult" nillable="true" type="q4:ArrayOfCampaignData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisteredSchoolsRedizo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="campaignId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisteredSchoolsRedizoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetRegisteredSchoolsRedizoResult" nillable="true" type="q5:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterSchoolToCampaign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="campaignId" type="xs:long" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="schollRedizo" nillable="true" type="q6:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterSchoolToCampaignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterSchoolToCampaignResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeSchools">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="schoolToSynchronize" nillable="true" type="q7:ArrayOfSubjectInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeSchoolsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="SynchronizeSchoolsResult" nillable="true" type="q8:SynchronizeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeSchoolFounders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="founderToSynchronize" nillable="true" type="q9:ArrayOfSubjectInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeSchoolFoundersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="SynchronizeSchoolFoundersResult" nillable="true" type="q10:SynchronizeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeSchoolIZO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="izoDefinition" nillable="true" type="q11:ArrayOfSchoolIzoDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeSchoolIZOResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="SynchronizeSchoolIZOResult" nillable="true" type="q12:SynchronizeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="fieldDefs" nillable="true" type="q13:ArrayOfFieldDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SynchronizeFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Ness.CSI.WSIntegration.EPis.Impl" minOccurs="0" name="SynchronizeFieldsResult" nillable="true" type="q14:SynchronizeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
