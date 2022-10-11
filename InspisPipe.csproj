@@ -211,6 +211,7 @@
     <Compile Include="Controllers\MergeDocController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\Print2PdfController.cs" />
+    <Compile Include="Controllers\Set_ExportA03ToT59Controller.cs" />
     <Compile Include="Controllers\Set_ExportA18ToT59Controller.cs" />
     <Compile Include="Controllers\Set_ExportA37ToT59Controller.cs" />
     <Compile Include="Controllers\SsoController.cs" />
@@ -240,6 +241,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\a03Institution.cs" />
     <Compile Include="Models\a18DepartmentDomain.cs" />
     <Compile Include="Models\a19DomainToInstitutionDepartment.cs" />
     <Compile Include="Models\a37InstitutionDepartment.cs" />
