@@ -15,13 +15,14 @@ namespace InspisPipe.Controllers
     {
         public string Get()
         {
-
+            
             var db = new DbHandler(DbEnum.PrimaryDb);
             string s = "SELECT a.*,case when a.a18SubCode2 is not null then a.a18SubCode1+a.a18SubCode2 end as Skupina,case when LEN(a.a18Code)>=5 then LEFT(a.a18Code,5) end as Obor";
             s += " FROM a18DepartmentDomain a";
             s += " WHERE GETDATE() BETWEEN a.a18ValidFrom AND a.a18ValidUntil";
 
             var lisA18 = db.GetList<a18DepartmentDomain>(s);
+            
 
             List<FieldDefinition> fields = new List<FieldDefinition>();
 
@@ -33,6 +34,7 @@ namespace InspisPipe.Controllers
 
             using (WSEPisClient client = new SetIntegration.WSEPisClient("WSHttpBinding_IWSEPis"))
             {
+                
                 var arr = fields.ToArray();
                 var result = client.SynchronizeFields(arr);
 
