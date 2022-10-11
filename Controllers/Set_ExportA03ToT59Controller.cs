@@ -19,6 +19,10 @@ namespace InspisPipe.Controllers
             {
                 return "Na vstupu chybí query!";
             }
+            if (query.Trim().Length<3)
+            {
+                return "Velikost query musí být alespoň 3 znaky!";
+            }
 
             var db = new DbHandler(DbEnum.PrimaryDb);
             string s = "SELECT a.*";
@@ -70,7 +74,7 @@ namespace InspisPipe.Controllers
 
                 if (result.Success)
                 {
-                    return "1";
+                    return "OK, rows: " + fields.Count();
                 }
                 else
                 {
