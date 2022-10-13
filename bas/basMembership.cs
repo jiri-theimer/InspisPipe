@@ -79,7 +79,13 @@ public class basMemberShip
             if (recJ03 != null)
             {
                 //v databázi login existuje, v membership nikoliv -> založit v membership
-                CreateUser(strLogin, strLogin, GetRandomPassword());
+                string strEmail = strLogin;
+                var recJ02=bas.LoadJ02Record(recJ03.j02ID);
+                if (recJ02 != null)
+                {
+                    strEmail = recJ02.j02Email;
+                }
+                CreateUser(strLogin, strEmail, GetRandomPassword());
                 user = Membership.GetUser(strLogin);
             }
             if (user == null)
