@@ -67,10 +67,15 @@ public class basMemberShip
     }
     public static string RecoveryPassword(string strLogin, string strExplicitPassword = null)
     {
+        if (string.IsNullOrEmpty(strLogin))
+        {
+            _Error = "Na vstupu metody [RecoveryPassword] chybí login.";
+            return null;
+        }
         MembershipUser user = Membership.GetUser(strLogin);
         if (user == null)
         {
-            _Error = "Uživatelský účet neexistuje.";
+            _Error = $"Metoda [RecoveryPassword] hlásí, že uživatelský účet [{strLogin}] neexistuje.";
             return null;
         }
         string strNewPWD = strExplicitPassword;

@@ -38,10 +38,11 @@ namespace InspisPipe.Controllers
                 v.ShowWarningMessage("Tato žádost o obnovení přihlašovacího hesla je starší než 30 minut.<hr>Musíte vygenerovat novou žádost."); return View(v);
             }
             var arr = System.IO.File.ReadAllText(strFile).Split('|').ToList();            
-            string strNewPwd = basMemberShip.RecoveryPassword(arr[0]);
+            string strNewPwd = basMemberShip.RecoveryPassword(arr[0].Trim());
             if (basMemberShip.ErrorMessage != null)
             {
-                v.ShowErrorMessasge(basMemberShip.ErrorMessage);return View(v);
+                v.ShowErrorMessasge(basMemberShip.ErrorMessage);
+                return View(v);
             }
 
             handle_send_new_password(arr[0], strNewPwd,v);
@@ -93,11 +94,16 @@ namespace InspisPipe.Controllers
         [HttpPost]
         public ActionResult Recovery(PasswordRecoveryViewModel v)
         {
+            
             RefreshStateRecovery(v);
 
             if (string.IsNullOrEmpty(v.LoginEmail))
             {
                 v.ShowErrorMessasge("Musíte zadat přihlašovací jméno/e-mail!"); return View(v);
+            }
+            else
+            {
+                v.LoginEmail = v.LoginEmail.Trim();
             }
             
             var recJ03 = bas.LoadJ03ByLogin(v.LoginEmail);
