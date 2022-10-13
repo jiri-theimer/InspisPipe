@@ -75,8 +75,18 @@ public class basMemberShip
         MembershipUser user = Membership.GetUser(strLogin);
         if (user == null)
         {
-            _Error = $"Metoda [RecoveryPassword] hlásí, že uživatelský účet [{strLogin}] neexistuje.";
-            return null;
+            var recJ03 = bas.LoadJ03ByLogin(strLogin);
+            if (recJ03 != null)
+            {
+                //v databázi login existuje, v membership nikoliv -> založit v membership
+                CreateUser(strLogin, strLogin, GetRandomPassword());
+                user = Membership.GetUser(strLogin);
+            }
+            if (user == null)
+            {
+                _Error = $"Metoda [RecoveryPassword] hlásí, že membership účet [{strLogin}] neexistuje.";
+                return null;
+            }            
         }
         string strNewPWD = strExplicitPassword;
         if (string.IsNullOrEmpty(strNewPWD))
