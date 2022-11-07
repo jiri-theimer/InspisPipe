@@ -71,7 +71,7 @@ namespace InspisPipe.Controllers
                 var arr = fields.ToArray();
 
                 var result = client.SynchronizeSchools(arr);
-
+              
                 if (result.Success)
                 {
                     return "OK, rows: " + fields.Count();

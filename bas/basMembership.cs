@@ -75,6 +75,7 @@ public class basMemberShip
         MembershipUser user = Membership.GetUser(strLogin);
         if (user == null)
         {
+            bas.LogInfo("Membership.GetUser(strLogin) pro " + strLogin + " == null", null, "RecoveryPassword");
             var recJ03 = bas.LoadJ03ByLogin(strLogin);
             if (recJ03 != null)
             {
@@ -122,6 +123,7 @@ public class basMemberShip
         if (userexist != null)
         {
             _Error = "Uživatel " + strLogin + " již existuje.";
+            bas.LogInfo("Uživatel " + strLogin + " již existuje.", null, "ValidatBeforeCreate");
             return false;
         }
         if (bas.InDouble(strPassword) > 0)

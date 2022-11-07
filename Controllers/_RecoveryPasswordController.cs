@@ -11,6 +11,8 @@ namespace InspisPipe.Controllers
         // GET: _RecoveryPassword
         public string Get(string apikey,string login, string explicitpassword = null)
         {
+            
+
             bas.VerifyApiKey(apikey);
             
             return basMemberShip.RecoveryPassword(login, explicitpassword);

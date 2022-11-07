@@ -12,7 +12,7 @@ namespace InspisPipe.Controllers
         public string Get(string apikey,string login, string password,string verify)
         {
             bas.VerifyApiKey(apikey);
-
+            
             if (basMemberShip.ValidatBeforeCreate(login, password, verify))
             {
                 return login;

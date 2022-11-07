@@ -12,7 +12,7 @@ namespace InspisPipe.Controllers
     {
         public bool Get(string apikey, string login, string password)
         {
-            
+           
             if (string.IsNullOrEmpty(login))
             {
                 return false;
