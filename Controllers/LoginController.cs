@@ -100,6 +100,11 @@ namespace InspisPipe.Controllers
             if (capi.Get("cesta-na-přímo-bez-klíče!", v.UserName, v.Password))
             {
                 var recJ03 = bas.LoadJ03ByLogin(v.UserName);
+                if (recJ03 == null)
+                {
+                    v.ShowErrorMessasge($"Nelze načíst uživatelský profil {v.UserName} (LoadJ03ByLogin=null)!");
+                    return View(v);
+                }
                 Write2Accesslog(v, recJ03.j03ID, null);
 
 
