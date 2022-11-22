@@ -12,7 +12,10 @@ namespace InspisPipe.Controllers
     {
         public bool Get(string apikey, string login, string password)
         {
-           
+            HttpContext.Current.Request.Url.ToString();
+            
+            password = HttpUtility.UrlDecode(password);
+            
             if (string.IsNullOrEmpty(login))
             {
                 return false;

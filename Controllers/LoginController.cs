@@ -97,7 +97,7 @@ namespace InspisPipe.Controllers
             v.UserName = v.UserName.Trim();
 
             var capi = new _ValidateUserController();
-            if (capi.Get("cesta-na-přímo-bez-klíče!", v.UserName, v.Password))
+            if (capi.Get("cesta-na-přímo-bez-klíče!", v.UserName,HttpUtility.UrlEncode(v.Password)))
             {
                 var recJ03 = bas.LoadJ03ByLogin(v.UserName);
                 if (recJ03 == null)
