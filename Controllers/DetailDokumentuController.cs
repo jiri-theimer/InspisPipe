@@ -15,7 +15,7 @@ namespace InspisPipe.Controllers
 
             return _gin.DetailDokumentu(pid);
 
-
+            
 
 
         }

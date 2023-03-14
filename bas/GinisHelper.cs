@@ -18,6 +18,7 @@ using System.Configuration;
 using System.Security.Principal;
 
 using System.Web.Services.Protocols;
+using System.Security.Cryptography;
 
 public class GinisHelper
 {
@@ -102,6 +103,51 @@ public class GinisHelper
     // xrg.Attributes.Append(ixsExtAttr)
     // ixsExtAttr.Value = EXT_DOMAIN
     // End Sub
+
+    public string OdeslatDatovku(string strDokumentId,string strGinisSubjektID,string strISDS)        //JT, fyzická osoba: df6w7m5, CleverApp: nhtn8nh, OSVČ: xqfz92m
+    {
+        XmlDocument oXml = new XmlDocument();
+        XmlNode oResult;
+        List<GinisDocument> oDocs = new List<GinisDocument>();
+
+        XmlNamespaceManager ns = new XmlNamespaceManager(oXml.NameTable);
+        ns.AddNamespace("ns", "http://www.gordic.cz/xrg/ssl/wfl-dokument/odeslani/response/v_1.0.0.0");
+
+        try
+        {
+            oXml.Load(Path.Combine(m_sXmlTemplatesPath, "Odeslani.xml"));            
+            oXml.GetElementsByTagName("Id-dokumentu")[0].InnerText = strDokumentId;     //DEMOX000A9WJ
+            oXml.GetElementsByTagName("Zpusob-doruceni")[0].InnerText = "ds";
+            oXml.GetElementsByTagName("Id-adresata")[0].InnerText = strGinisSubjektID;
+            oXml.GetElementsByTagName("Odes-komu")[0].InnerText = strISDS;
+
+            //oXml.GetElementsByTagName("Odes-od")[0].InnerText = "";    //odesílatel
+
+            
+
+
+            oResult = ToXmlNode(m_oSslRef.Odeslani(ToXElement(oXml)));
+
+            
+            if (oResult == null)
+            {
+
+                throw new Exception("Dokument " + strDokumentId + " nebyl odeslán, komu: "+ strISDS);
+            }
+
+
+
+            return oResult.SelectSingleNode("//ns:Id-souboru", ns).InnerText;
+        }
+        catch (Exception ex)
+        {
+
+
+            OnError?.Invoke(ex.Message);
+            throw new Exception("UploadFile" + ex.Message.ToString());
+        }
+
+    }
 
     /// <summary>
     ///     ''' nacte detail o dokumentu v GINIS
@@ -323,7 +369,7 @@ public class GinisHelper
                 oXml.GetElementsByTagName("Poradove-cislo-cj")[0].InnerText = PoradoveCisloCj.ToString();
 
             oResult = ToXmlNode(m_oSslRef.Prehledcj(ToXElement(oXml)));
-
+            
             if (oResult == null)
                 return null;
 
@@ -642,6 +688,8 @@ public class GinisHelper
             throw new Exception("SeznamSouboru" + ex.Message.ToString());
         }
     }
+
+
 
     /// <summary>
     ///     ''' 
