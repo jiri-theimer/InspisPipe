@@ -120,10 +120,11 @@ public class GinisHelper
             oXml.GetElementsByTagName("Zpusob-doruceni")[0].InnerText = "ds";
             oXml.GetElementsByTagName("Id-adresata")[0].InnerText = strGinisSubjektID;
             oXml.GetElementsByTagName("Odes-komu")[0].InnerText = strISDS;
+            oXml.GetElementsByTagName("Rezim")[0].InnerText = "odeslani";       //může být i: priprava
 
             //oXml.GetElementsByTagName("Odes-od")[0].InnerText = "";    //odesílatel
 
-            
+
 
 
             oResult = ToXmlNode(m_oSslRef.Odeslani(ToXElement(oXml)));
