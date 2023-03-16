@@ -11,6 +11,7 @@ namespace InspisPipe.Controllers
     public class LoginController : BaseController
     {
 
+       
         public ActionResult BorrowAnIdentity(string returnurl, string sourceusername)
         {
             //FormsAuthentication.SignOut();  //definitivní odhlášení

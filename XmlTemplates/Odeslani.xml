@@ -3,20 +3,23 @@
     <!-- demo360g9, d364vvm5 - DEMOX000A9WJ  -->
     <Id-dokumentu>DEMOX000A9WJ</Id-dokumentu>
     <Podaci-cislo xsi:nil="true" />
-    <Zpusob-doruceni>posta</Zpusob-doruceni>
+    <Zpusob-doruceni>ds</Zpusob-doruceni>
     <!--
     <Druh-zasilky>doporucena zasilka - standard</Druh-zasilky>
     <Druh-zachazeni>do vl. rukou (cervena)</Druh-zachazeni>
     -->
     <Id-dorucenky>
     </Id-dorucenky>
-    <Id-adresata>DEMOSE00A7VL</Id-adresata>
+    <Id-adresata>CSI0SE02EGNH</Id-adresata>
     <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
     <Typ-obsahu-zasilky>stejnopis</Typ-obsahu-zasilky>
     <Poznamka>Test odeslání ze XRG460.28</Poznamka>
-    <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>    
-    <Odes-komu>df6w7xx</Odes-komu>
+    <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>        
     <Druh-zasilky-pro-kombinaci>psani</Druh-zasilky-pro-kombinaci>
-    <Rezim>priprava</Rezim>
+    <Rezim>odeslani</Rezim>
   </Odeslani>
+  <Predpis>
+	<Odes-komu>df6w7m5</Odes-komu>
+	<Odes-od>g7zais9</Odes-od>
+  </Predpis>
 </Xrg>

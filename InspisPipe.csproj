@@ -206,6 +206,7 @@
     <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CreateUserController.cs" />
+    <Compile Include="Controllers\DatovkaController.cs" />
     <Compile Include="Controllers\DetailDokumentuController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MergeDocController.cs" />
@@ -713,11 +714,13 @@
     <Content Include="Views\CreateUser\Index.cshtml" />
     <Content Include="Views\CreateUser\Confirm.cshtml" />
     <Content Include="Views\Login\BorrowAnIdentity.cshtml" />
+    <Content Include="Views\Login\Datovka.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\BaseApi\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Datovka\" />
     <Folder Include="Views\DetailDokumentu\" />
     <Folder Include="Views\GetLoginByMembershipID\" />
     <Folder Include="Views\GetPidDokumentuFromCJ\" />

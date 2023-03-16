@@ -49,6 +49,7 @@ public class GinisHelper
         switch (strLogin)
         {
             case "lamos":
+            case "hovado":
             case "kuchar":
                 {
                     this.USERNAME = "inspis";    // vyjímka
@@ -66,7 +67,15 @@ public class GinisHelper
         //    var arr = this.USERNAME.Split("(");
 
         //}
-            
+
+        if (strLogin == "hovado")
+        {
+            //testovací server
+            this.GINURL = "http://wmx21.csi.local/Gordic/Ginis/Ws/GIN01/Gin.svc"; ; //testování
+            this.SSLURL = "http://wmx21.csi.local/Gordic/Ginis/Ws/SSL01/Ssl.svc"; ; //testování
+            this.PASSWORD = "Pwd4Gin!"; //testování
+        }
+        
 
         try
         {
@@ -104,6 +113,30 @@ public class GinisHelper
     // ixsExtAttr.Value = EXT_DOMAIN
     // End Sub
 
+    public string NajdiEsuIco(string strICO)
+    {
+        XmlDocument oXml = new XmlDocument();
+        XmlNode oResult;
+
+        XmlNamespaceManager ns = new XmlNamespaceManager(oXml.NameTable);
+        ns.AddNamespace("ns", "http://www.gordic.cz/xrg/gin/esu/najdi-esu-ico/response/v_1.0.0.0");
+
+        oXml.Load(Path.Combine(m_sXmlTemplatesPath, "Najdi-esu-ico.xml"));
+        oXml.GetElementsByTagName("Ico")[0].InnerText = strICO;
+
+        oResult = ToXmlNode(m_oGinRef.Najdiesuico(ToXElement(oXml)));
+
+        if (oResult == null)
+        {
+
+            throw new Exception("IČO " + strICO + " chyba");
+        }
+
+
+
+        return oResult.SelectSingleNode("//ns:Id-esu", ns).InnerText;
+    }
+
     public string OdeslatDatovku(string strDokumentId,string strGinisSubjektID,string strISDS)        //JT, fyzická osoba: df6w7m5, CleverApp: nhtn8nh, OSVČ: xqfz92m
     {
         XmlDocument oXml = new XmlDocument();
@@ -119,8 +152,10 @@ public class GinisHelper
             oXml.GetElementsByTagName("Id-dokumentu")[0].InnerText = strDokumentId;     //DEMOX000A9WJ
             oXml.GetElementsByTagName("Zpusob-doruceni")[0].InnerText = "ds";
             oXml.GetElementsByTagName("Id-adresata")[0].InnerText = strGinisSubjektID;
-            oXml.GetElementsByTagName("Odes-komu")[0].InnerText = strISDS;
-            oXml.GetElementsByTagName("Rezim")[0].InnerText = "odeslani";       //může být i: priprava
+            
+            oXml.GetElementsByTagName("Rezim")[0].InnerText = "odeslani";       //může být i: priprava nebo priprava
+
+            //oXml.GetElementsByTagName("Odes-komu")[0].InnerText = strISDS;
 
             //oXml.GetElementsByTagName("Odes-od")[0].InnerText = "";    //odesílatel
 

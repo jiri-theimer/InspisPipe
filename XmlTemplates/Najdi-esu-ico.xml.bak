@@ -1,0 +1,11 @@
+<Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/navrat-dorucenky/request/v_1.0.0.0">
+  <Navrat-dorucenky>
+    <Id-dorucenky>DEMO2000A7MU</Id-dorucenky>
+    <Id-dokumentu>DEMOX000BCK9</Id-dokumentu>
+    <Stav-zasilky>vraceno-adresat-se-odstehoval</Stav-zasilky>
+    <!--
+    <Datum-doruceni>2002-10-04</Datum-doruceni>
+    -->
+    <Datum-ulozeni>2008-01-04</Datum-ulozeni>
+  </Navrat-dorucenky>
+</Xrg>
