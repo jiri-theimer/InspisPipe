@@ -1,25 +1,21 @@
 <Xrg xmlns="http://www.gordic.cz/xrg/ssl/wfl-dokument/odeslani/request/v_1.0.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Odeslani>
     <!-- demo360g9, d364vvm5 - DEMOX000A9WJ  -->
-    <Id-dokumentu>DEMOX000A9WJ</Id-dokumentu>
-    <Podaci-cislo xsi:nil="true" />
-    <Zpusob-doruceni>ds</Zpusob-doruceni>
-    <!--
-    <Druh-zasilky>doporucena zasilka - standard</Druh-zasilky>
-    <Druh-zachazeni>do vl. rukou (cervena)</Druh-zachazeni>
-    -->
+    <Id-dokumentu>CSI0X00ADYIQ</Id-dokumentu>    
+    <Zpusob-doruceni>ds</Zpusob-doruceni>   
     <Id-dorucenky>
     </Id-dorucenky>
-    <Id-adresata>CSI0SE02EGNH</Id-adresata>
+    <Id-adresata>CSI0SE02IO9F</Id-adresata>
     <Priznak-odeslani-originalu>kopie</Priznak-odeslani-originalu>
-    <Typ-obsahu-zasilky>stejnopis</Typ-obsahu-zasilky>
-    <Poznamka>Test odeslání ze XRG460.28</Poznamka>
+    <Typ-obsahu-zasilky>kopie</Typ-obsahu-zasilky>    
     <Generovat-id-dorucenky>ano</Generovat-id-dorucenky>        
-    <Druh-zasilky-pro-kombinaci>psani</Druh-zasilky-pro-kombinaci>
+    <Druh-zasilky-pro-kombinaci>neurceno</Druh-zasilky-pro-kombinaci>
     <Rezim>odeslani</Rezim>
   </Odeslani>
   <Predpis>
 	<Odes-komu>df6w7m5</Odes-komu>
 	<Odes-od>g7zais9</Odes-od>
+	<Mail-predmet>Nazdar podruhé</Mail-predmet>
+	<Sezn-id-priloh>CSI00C0UHD39</Sezn-id-priloh>
   </Predpis>
 </Xrg>
