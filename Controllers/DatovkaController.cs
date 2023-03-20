@@ -9,9 +9,19 @@ namespace InspisPipe.Controllers
     public class DatovkaController : InspisPipe.Controllers.BaseApiController
     {
         // GET: Datovka
-        public string Get(string login, string ginis_doc_pid, string ginis_file_pid, string id_esu, string id_ds, string message_subject)
+        public string Get(string apikey,string login, string ginis_doc_pid, string ginis_file_pid, string id_esu, string id_ds, string message_subject)
         {
-            
+            if (string.IsNullOrEmpty(login))
+            {
+                return "login missing";
+            }
+            if (string.IsNullOrEmpty(ginis_doc_pid) || string.IsNullOrEmpty(ginis_file_pid) || string.IsNullOrEmpty(id_esu) || string.IsNullOrEmpty(id_ds))
+            {
+                return "missing input";
+            }
+
+            bas.VerifyApiKey(apikey);
+
             this.InhaleLogin(login);
 
             if (!string.IsNullOrEmpty(message_subject))
