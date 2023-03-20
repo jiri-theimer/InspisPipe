@@ -137,7 +137,7 @@ public class GinisHelper
         return oResult.SelectSingleNode("//ns:Id-esu", ns).InnerText;
     }
 
-    public string OdeslatDatovku(string strDokumentId,string strGinisSubjektID,string strISDS)        //JT, fyzická osoba: df6w7m5, CleverApp: nhtn8nh, OSVČ: xqfz92m
+    public string OdeslatDatovku(string GinisDocPid,string GinisFilePid, string IdEsu,string IdDS,string MessageSubject)        //JT, fyzická osoba: df6w7m5, CleverApp: nhtn8nh, OSVČ: xqfz92m
     {
         XmlDocument oXml = new XmlDocument();
         XmlNode oResult;
@@ -149,16 +149,18 @@ public class GinisHelper
         try
         {
             oXml.Load(Path.Combine(m_sXmlTemplatesPath, "Odeslani.xml"));            
-            oXml.GetElementsByTagName("Id-dokumentu")[0].InnerText = strDokumentId;     //DEMOX000A9WJ
+            oXml.GetElementsByTagName("Id-dokumentu")[0].InnerText = GinisDocPid;
             oXml.GetElementsByTagName("Zpusob-doruceni")[0].InnerText = "ds";
-            oXml.GetElementsByTagName("Id-adresata")[0].InnerText = strGinisSubjektID;
+            oXml.GetElementsByTagName("Id-adresata")[0].InnerText = IdEsu;
             
             oXml.GetElementsByTagName("Rezim")[0].InnerText = "odeslani";       //může být i: priprava nebo priprava
 
-            //oXml.GetElementsByTagName("Odes-komu")[0].InnerText = strISDS;
+            
+            oXml.GetElementsByTagName("Odes-od")[0].InnerText = "g7zais9";    //odesílatel
 
-            //oXml.GetElementsByTagName("Odes-od")[0].InnerText = "";    //odesílatel
-
+            oXml.GetElementsByTagName("Odes-komu")[0].InnerText = IdDS;
+            oXml.GetElementsByTagName("Mail-predmet")[0].InnerText = MessageSubject;
+            oXml.GetElementsByTagName("Sezn-id-priloh")[0].InnerText = GinisFilePid;
 
 
 
@@ -168,12 +170,17 @@ public class GinisHelper
             if (oResult == null)
             {
 
-                throw new Exception("Dokument " + strDokumentId + " nebyl odeslán, komu: "+ strISDS);
+                throw new Exception($"Dokument {GinisDocPid}/{GinisFilePid} nebyl odeslán, komu: {IdEsu}/{IdDS}, předmět zprávy: {MessageSubject}.");
             }
 
 
+            var rXml = new XmlDocument();
+            rXml.LoadXml(oResult.InnerXml);
+            
+            
+            return rXml.GetElementsByTagName("Id-odeslani")[0].InnerText;
 
-            return oResult.SelectSingleNode("//ns:Id-souboru", ns).InnerText;
+            
         }
         catch (Exception ex)
         {
