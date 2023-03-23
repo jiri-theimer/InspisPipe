@@ -50,6 +50,7 @@ public class GinisHelper
         {
             case "lamos":
             case "hovado":
+            case "robot":
             case "kuchar":
                 {
                     this.USERNAME = "inspis";    // vyjímka
