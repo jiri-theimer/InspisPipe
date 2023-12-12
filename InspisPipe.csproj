@@ -207,6 +207,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CreateUserController.cs" />
     <Compile Include="Controllers\DatovkaController.cs" />
+    <Compile Include="Controllers\DatovkaErrorLogController.cs" />
     <Compile Include="Controllers\DetailDokumentuController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MergeDocController.cs" />
@@ -720,6 +721,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\BaseApi\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\DatovkaErrorLog\" />
     <Folder Include="Views\Datovka\" />
     <Folder Include="Views\DetailDokumentu\" />
     <Folder Include="Views\GetLoginByMembershipID\" />

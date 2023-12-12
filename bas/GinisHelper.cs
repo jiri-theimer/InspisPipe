@@ -19,6 +19,7 @@ using System.Security.Principal;
 
 using System.Web.Services.Protocols;
 using System.Security.Cryptography;
+using WebGrease.Activities;
 
 public class GinisHelper
 {
@@ -140,6 +141,8 @@ public class GinisHelper
 
     public string OdeslatDatovku(string GinisDocPid,string GinisFilePid, string IdEsu,string IdDS,string MessageSubject)        //JT, fyzická osoba: df6w7m5, CleverApp: nhtn8nh, OSVČ: xqfz92m
     {
+        //v GinisFilePid může být více názvů souborů oddělených středníkem
+
         XmlDocument oXml = new XmlDocument();
         XmlNode oResult;
         List<GinisDocument> oDocs = new List<GinisDocument>();
@@ -185,8 +188,11 @@ public class GinisHelper
         }
         catch (Exception ex)
         {
-
-
+            bas.LogError($"Dokument {GinisDocPid}/{GinisFilePid} nebyl odeslán, komu: {IdEsu}/{IdDS}, předmět zprávy: {MessageSubject}","datovka","OdeslatDatovku");
+            bas.LogError(ex.Message, "datovka", "OdeslatDatovku");
+            
+            
+            
             OnError?.Invoke(ex.Message);
             throw new Exception("UploadFile" + ex.Message.ToString());
         }
