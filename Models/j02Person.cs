@@ -13,6 +13,7 @@ namespace InspisPipe.Models
         public string j02LastName { get; set; }
         public DateTime j02ValidFrom { get; set; }
         public DateTime j02ValidUntil { get; set; }
+        public string j02Mobile { get; set; }
         public bool isclosed { get; set; }
         public string j02Guid { get; set; }
     }

@@ -108,7 +108,29 @@ namespace InspisPipe.Controllers
                 }
                 Write2Accesslog(v, recJ03.j03ID, null);
 
+                var recJ04 = bas.j04_handle_load($"j04ID={recJ03.j04ID}");
+                bool bolSendSms = false;
+                if (recJ04.j04TwoFactorVerifyFlag == InspisPipe.Models.j04TwoFactorVerifyFlagEnum.AlwaysAfterLogin)
+                {
+                    bolSendSms = true;
+                }
+                
+                if (!bolSendSms && recJ04.j04TwoFactorVerifyFlag == InspisPipe.Models.j04TwoFactorVerifyFlagEnum.IfChangedUserAgend && bas.IsChangedLastLoginUserAgent(recJ03.j03ID))
+                {
+                    bolSendSms = true;
+                }
 
+                if (bolSendSms)
+                {
+                    var csms = new SendSms();
+                    var recJ02 = bas.LoadJ02Record(recJ03.j02ID);
+                    csms.SendLoginVerifyMessage(null, recJ02, recJ03);
+                    if (csms.GetError() != null)
+                    {
+                        v.ShowErrorMessasge($"Chyba v komunikaci se SMS bránou, která odesílá ověřovací SMS kód pro 2-faktorové ověření. Popis chyby: {csms.GetError()}");
+                        return View(v);
+                    }
+                }
 
                 if (string.IsNullOrEmpty(v.SourceUrl))
                 {

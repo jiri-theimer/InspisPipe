@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.IO;
+using InspisPipe.Models;
 public class bas
 {
     private static System.Text.StringBuilder _s { get; set; }
@@ -117,6 +118,18 @@ public class bas
         }
     }
 
+    public static InspisPipe.Models.j04UserRole j04_handle_load(string sqlwhere)
+    {
+        var db = new DbHandler(DbEnum.PrimaryDb);
+        return db.Load<InspisPipe.Models.j04UserRole>($"select *,convert(bit,CASE WHEN GETDATE() BETWEEN j04ValidFrom AND j04ValidUntil THEN 0 ELSE 1 end) as isclosed FROM j04UserRole WHERE " + sqlwhere);
+
+    }
+    
+    public static bool IsChangedLastLoginUserAgent(int j03id)
+    {
+        var db = new DbHandler(DbEnum.PrimaryDb);
+        return db.Load<GetBool>($"select dbo._core_j03_ischanged_useragent({j03id}) as Value").Value;
+    }
     public static InspisPipe.Models.j03User LoadJ03ByLogin(string login)
     {        
         return j03_handle_load($"j03Login LIKE '{login}'");
